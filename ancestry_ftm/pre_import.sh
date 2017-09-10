@@ -6,26 +6,16 @@ if [ "$1" != "-f" ] ; then
     exit 1
 fi
 
-
-
-j="java -jar $HOME/dev/github_cmosher01"
-
-g_refn="$j/Gedcom-Refn/build/libs/gedcom-refn-1.0.0-SNAPSHOT-all.jar"
-g_noty="$j/Gedcom-Notary/build/libs/gedcom-notary-1.0.0-SNAPSHOT-all.jar"
-g_sort="$j/Gedcom-Sort/build/libs/gedcom-sort-1.0.0-SNAPSHOT-all.jar"
-g_unot="$j/Gedcom-UnNote/build/libs/gedcom-unnote-1.0.0-SNAPSHOT-all.jar"
-g_ed="$j/Gedcom-Ed/build/libs/gedcom-ed-1.0.0-SNAPSHOT-all.jar"
-
-
-$g_unot -c 60 -d | \
-$g_unot -c 60 -n inline | \
-$g_refn | \
-$g_ed -c 60 -w '.HEAD.SOUR' --update=FTM -R | \
-$g_sort -c 60 -s -u | tee orig.ged | \
-$g_noty -c 60 -w '.INDI.*.DATE"[^0-9].*"' -i sibling | \
-$g_noty -c 60 -w '.SOUR.TEXT' -i sibling -d | \
-$g_noty -c 60 -w '.OBJE.REFN' -i sibling -d | \
-$g_noty -c 60 -w '.SOUR.REFN' -i sibling -d
+gedcom-unnote -c 60 -d | \
+gedcom-unnote -c 60 -n inline | \
+gedcom-refn | \
+gedcom-ed -c 60 -w '.HEAD.SOUR' --update=FTM -R | \
+gedcom-sort -c 60 -s -u | \
+tee orig.ged | \
+gedcom-notary -c 60 -w '.INDI.*.DATE"[^0-9].*"' -i sibling | \
+gedcom-notary -c 60 -w '.SOUR.TEXT' -i sibling -d | \
+gedcom-notary -c 60 -w '.OBJE.REFN' -i sibling -d | \
+gedcom-notary -c 60 -w '.SOUR.REFN' -i sibling -d
 
 # Remaining differences:
 # ----------------------

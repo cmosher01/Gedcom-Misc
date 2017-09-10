@@ -44,3 +44,8 @@ format: _APID  <service>,<database>::<individual>
         <individual>: the persona ID within the <database>
 
 On citations, <individual> is given, but on source records, it is 0.
+
+
+Currently Ancestry only adds _APID to indis here: '.INDI.*.SOUR._APID';
+they are not at .SOUR._APID anymore.
+The events can be matched on type, DATE, and SOUR (using SOUR>REFN)

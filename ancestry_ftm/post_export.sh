@@ -8,27 +8,18 @@ if [ ! -r "$1" -o ! -r "$2" ] ; then
     exit 1
 fi
 
-
-
-j="java -jar $HOME/dev/github_cmosher01"
-
-g_noty="$j/Gedcom-Notary/build/libs/gedcom-notary-1.0.0-SNAPSHOT-all.jar"
-g_sort="$j/Gedcom-Sort/build/libs/gedcom-sort-1.0.0-SNAPSHOT-all.jar"
-g_unot="$j/Gedcom-UnNote/build/libs/gedcom-unnote-1.0.0-SNAPSHOT-all.jar"
-g_reid="$j/Gedcom-RestoreIds/build/libs/gedcom-restoreids-1.0.0-SNAPSHOT-all.jar"
-g_unev="$j/Gedcom-UnFtmEvent/build/libs/gedcom-unftmevent-1.0.0-SNAPSHOT-all.jar"
-
-# hack to restore SUBM (assumes only one per file)
+# hack to restore SUBM ID (assumes only one per file)
 subm=$(grep '^0 @.*@ SUBM' "$1" | cut -d' ' -f2)
 
 dos2unix "$2"
 cat "$2" | \
-$g_noty -c 60 -w '.INDI.*.NOTE' -x sibling -d | \
-$g_noty -c 60 -w '.SOUR.NOTE' -x sibling | \
-$g_noty -c 60 -w '.OBJE.NOTE' -x sibling | \
-$g_unot -c 60 -d | \
-$g_unot -c 60 -n inline | \
-$g_unev -t _XY | \
-$g_reid -c 60 -g "$1" -w '.REPO.NAME' -w '.*.REFN' | \
-$g_sort -c 60 -s -u | \
+# gedcom-fixancestryexport UTF8 | \    Uncomment for Ancestry export
+gedcom-notary -c 60 -w '.INDI.*.NOTE' -x sibling -d | \
+gedcom-notary -c 60 -w '.SOUR.NOTE' -x sibling | \
+gedcom-notary -c 60 -w '.OBJE.NOTE' -x sibling | \
+gedcom-unnote -c 60 -d | \
+gedcom-unnote -c 60 -n inline | \
+gedcom-unftmevent -t _XY | \
+gedcom-restoreids -c 60 -g "$1" -w '.REPO.NAME' -w '.*.REFN' | \
+gedcom-sort -c 60 -s -u | \
 sed -e "s/ SUBM @.*@/ SUBM $subm/" -e "s/0 @.*@ SUBM/0 $subm SUBM/"

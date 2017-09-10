@@ -23,14 +23,8 @@ if [ ! -r $n.xy ] ; then
     exit 1
 fi
 
-j="java -jar $HOME/dev/github_cmosher01"
-
-g_slct="$j/Gedcom-Select/build/libs/gedcom-select-1.0.0-SNAPSHOT-all.jar"
-g_pnte="$j/Gedcom-Pointees/build/libs/gedcom-pointees-1.0.0-SNAPSHOT-all.jar"
-g_extr="$j/Gedcom-Extract/build/libs/gedcom-extract-1.0.0-SNAPSHOT-all.jar"
-
-$g_slct -g $i -w '.INDI._XY' <$n.xy | \
-$g_pnte -g $i -f $n.skel.ids | \
-$g_extr -g $i -f $n.skel.ids >$n.ged
+gedcom-select -g $i -w '.INDI._XY' <$n.xy | \
+gedcom-pointees -g $i -f $n.skel.ids | \
+gedcom-extract -g $i -f $n.skel.ids >$n.ged
 
 gramps -q -i $n.ged -a tool -p name=verify >$n.gramps.verify 2>&1
