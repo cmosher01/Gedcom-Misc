@@ -1,0 +1,46 @@
+2 SOUR @S-333148567@
+3 _APID 1,7250::1398341614
+3 OBJE @gdeK1oVZQcOvE3dOdkDS@
+
+0 @S-333148567@ SOUR
+1 _APID 1,7250::0
+1 REPO @R-899050557@
+1 TITL New York, State Census, 1875
+1 AUTH Ancestry.com
+1 PUBL Name: Ancestry.com Operations, Inc.; Location: Provo, UT, USA; Date: 2013
+
+0 @R-899050557@ REPO
+1 NAME Ancestry.com
+1 ADDR http://www.Ancestry.com
+
+0 @gdeK1oVZQcOvE3dOdkDS@ OBJE
+1 FILE C:\Users\vagrant\Documents\Family Tree Maker\Mosher_Disosway_Harrison_Pazmino Media\New York, State Census, 1875(8).jpg
+2 FORM jpg
+2 TITL New York, State Census, 1875
+
+
+record: http://search.ancestry.com/cgi-bin/sse.dll?
+        indiv=1&
+        dbid=7250&     <----  <database>
+        h=1398341614&  <----  <individual>
+        ssrc=pt&
+        tid=61407337&
+        pid=44070322563&
+        usePUB=true
+
+image:  https://www.ancestry.com/interactive/
+        7250/          <----  <database>
+        004857925_00177/
+        1398341614     <----  <individual>
+
+
+
+_APID lines occur in GEDCOM under citations and source records.
+They are only output during an export from Ancestry web site.
+
+format: _APID  <service>,<database>::<individual>
+        <service>: 1 = Ancestry.com
+        <database>: the source database, e.g., 1875 NY Census
+        <individual>: the persona ID within the <database>
+
+On citations, <individual> is given, but on source records, it is 0.

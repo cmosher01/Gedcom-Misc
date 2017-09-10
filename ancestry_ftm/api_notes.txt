@@ -1,0 +1,271 @@
+good: https://www.ancestry.com/family-tree/pt/RecordSearch.aspx?tid=61407337&pid=44070322640&ssrc=pt
+
+
+
+
+
+
+https://www.ancestry.com/family-tree/tree/61407337/family
+
+
+
+
+good:
+http://search.ancestry.com/cgi-bin/
+
+sse.dll?
+
+ssrc=pt_t61407337_p44070322640&
+srchb=r&
+gss=pt&
+rank=1&
+gl=allgs&
+tid=61407337&
+pid=44070322640&
+gpid=&
+gsfn=Mary&
+gsln=Colvin&
+msbdy=1787&
+msddy=1858&
+msbpn=3250&
+msbpn_PInfo=3-|0|0|0|3250|0|0|0|0|0|0|&
+msbpn__ftp=Ireland&
+msdpn=10919&
+msdpn_PInfo=8-|0|0|0|2|0|35|0|1864|10919|0|&
+msdpn__ftp=Cazenovia, Madison, New York, USA&
+cp=0&
+cpxt=0&
+msrpn=10919&
+msrpn_PInfo=8-|0|0|0|2|0|35|0|1864|10919|0|&
+msrpn__ftp=Cazenovia, Madison, New York, USA&
+msrpn1=10919&
+msrpn1_PInfo=8-|0|0|0|2|0|35|0|1864|10919|0|&
+msrpn1__ftp=Cazenovia, Madison, New York, USA&
+msrpn2=10919&
+msrpn2_PInfo=8-|0|0|0|2|0|35|0|1864|10919|0|&
+msrpn2__ftp=Cazenovia, Madison, New York, USA&
+msfng=unknown&
+msfns=Colvin&
+msbng0=James&
+msbns0=Colvin&
+_83004003-n_xcl=m&
+MSAV=1&
+so=4
+
+
+
+
+
+bad:  https://www.ancestry.com/family-tree/pt/RecordSearch.aspx?tid=115063939&pid=270136455028&ssrc=pt
+
+http://search.ancestry.com/cgi-bin/
+
+sse.dll?
+
+ssrc=pt_t115063939_p270136455028&
+srchb=r&
+gss=pt&
+rank=1&
+gl=allgs&
+tid=115063939&
+pid=270136455028&
+gpid=&
+gsfn=Mary&
+gsln=Colvin&
+msbdy=1787&
+msddy=1858&
+msbpn=3250&
+msbpn_PInfo=3-|0|0|0|3250|0|0|0|0|0|0|&
+msbpn__ftp=Ireland&
+msdpn=10919&
+msdpn_PInfo=8-|0|0|0|2|0|35|0|1864|10919|0|&
+msdpn__ftp=Cazenovia, Madison, New York, USA&
+cp=0&
+cpxt=0&
+msrpn=10919&
+msrpn_PInfo=8-|0|0|0|2|0|35|0|1864|10919|0|&
+msrpn__ftp=Cazenovia, Madison, New York, USA&
+msrpn1=10919&
+msrpn1_PInfo=8-|0|0|0|2|0|35|0|1864|10919|0|&
+msrpn1__ftp=Cazenovia, Madison, New York, USA&
+msrpn2=10919&
+msrpn2_PInfo=8-|0|0|0|2|0|35|0|1864|10919|0|&
+msrpn2__ftp=Cazenovia, Madison, New York, USA&
+msfng=unknown&
+msfns=Colvin&
+msbng0=James&
+msbns0=Colvin&
+_83004003-n_xcl=m&
+MSAV=1&
+so=4
+
+
+
+
+
+
+
+
+
+
+
+Get info about a certain person record in a database, including
+what trees it's added to:
+
+http://search.ancestry.com/content/pages/ajax/RecordSetDataModelAJAXHandler.ashx?
+dbid=7364&
+pid=1123412&
+iid=&
+unq=1504539164174&
+op=orempid-sbuser-ptuser-linkedrecordsall-usernamesall&
+snamegpids=&
+treeId=115063939&
+personId=270136455046&
+usePUB=true&
+useOldPUB=false&
+client=AncestrySearch&
+
+This works, too:
+
+http://search.ancestry.com/content/pages/ajax/RecordSetDataModelAJAXHandler.ashx?
+dbid=7364&
+pid=1123412&
+op=orempid-sbuser-ptuser-linkedrecordsall-usernamesall&
+client=AncestrySearch
+
+
+This determines what records to return:
+op=orempid-sbuser-ptuser-linkedrecordsall-usernamesall
+
+orempid
+sbuser
+ptuser
+linkedrecordsall
+usernamesall
+
+
+orempid:
+{
+  "ImageId": "",
+  "Dbid": "7364",
+  "UserId": "0065664A-0000-0000-0000-000000000000",
+  "SelectedPid": "1123412",
+  "SurnameGPids": "",
+  "Records": {
+
+  },
+  "Users": {
+
+  },
+  "UserNameProfiles": null,
+  "PidList": [
+
+  ]
+}
+
+sbuser:
+{
+  "ImageId": "",
+  "Dbid": "7364",
+  "UserId": "0065664A-0000-0000-0000-000000000000",
+  "SelectedPid": "1123412",
+  "SurnameGPids": "",
+  "Records": {
+    "_1123412": {
+      "Orems": null,
+      "Comments": null,
+      "OremChngUsers": null,
+      "Shoeboxes": [
+
+      ],
+      "Trees": null,
+      "MessageBoards": null,
+      "SavedToShoeBoxPeople": null,
+      "SavedToPublicTrees": null,
+      "SavedToPrivateTrees": null,
+      "LinkedRecords": null,
+      "OtherRecords": null
+    }
+  },
+  "Users": {
+
+  },
+  "UserNameProfiles": null,
+  "PidList": [
+    "1123412"
+  ]
+}
+
+ptuser:  ********************
+{
+  "ImageId": "",
+  "Dbid": "7364",
+  "UserId": "0065664A-0000-0000-0000-000000000000",
+  "SelectedPid": "1123412",
+  "SurnameGPids": "",
+  "Records": {
+    "_1123412": {
+      "Orems": null,
+      "Comments": null,
+      "OremChngUsers": null,
+      "Shoeboxes": null,
+      "Trees": [
+        {
+          "UserId": "0065664A-0000-0000-0000-000000000000",
+          "DateSaved": "/Date(-62135571600000)/",
+          "TreeId": "61407337",
+          "TreeName": "Mosher_Disosway_Harrison_Pazmino",
+          "PersonId": "44073955963",
+          "PersonName": "Seely, Jessie Ada"
+        },
+        {
+          "UserId": "0065664A-0000-0000-0000-000000000000",
+          "DateSaved": "/Date(-62135571600000)/",
+          "TreeId": "114852864",
+          "TreeName": "Colvin Split Test",
+          "PersonId": "240131918161",
+          "PersonName": "Seely, Jessie Ada"
+        },
+        {
+          "UserId": "0065664A-0000-0000-0000-000000000000",
+          "DateSaved": "/Date(-62135571600000)/",
+          "TreeId": "115063939",
+          "TreeName": "colvin.import(10)",
+          "PersonId": "270136455046",
+          "PersonName": "Seely, Jessie Ada"
+        },
+        {
+          "UserId": "0065664A-0000-0000-0000-000000000000",
+          "DateSaved": "/Date(-62135571600000)/",
+          "TreeId": "115047680",
+          "TreeName": "colvin.import(8)",
+          "PersonId": "200132842209",
+          "PersonName": "Seely, Jessie Ada"
+        }
+      ],
+      "MessageBoards": null,
+      "SavedToShoeBoxPeople": null,
+      "SavedToPublicTrees": null,
+      "SavedToPrivateTrees": null,
+      "LinkedRecords": null,
+      "OtherRecords": null
+    }
+  },
+  "Users": {
+
+  },
+  "UserNameProfiles": null,
+  "PidList": [
+    "1123412"
+  ]
+}
+
+
+
+
+
+
+
+http://search.ancestry.com/cgi-bin/sse.dll?_phsrc=bMr658&_phstart=successSource&usePUBJs=true&ssrc=pt_t115063939_p270136455046&srchb=r&gss=angs-g&rank=1&tid=115063939&pid=270136455046&gpid=&gsfn=Jessie%20Ada&gsln=Seely%20Colvin&msbdy=1863&msddy=1939&msbpn=35&msbpn_PInfo=5-%7C0%7C0%7C0%7C2%7C0%7C35%7C0%7C0%7C0%7C0%7C&msbpn__ftp=New%20York,%20USA&cp=0&cpxt=0&msrpn=10927&msrpn_PInfo=8-%7C0%7C0%7C0%7C2%7C0%7C35%7C0%7C1864%7C10927%7C0%7C&msrpn__ftp=Georgetown,%20Madison,%20New%20York,%20USA&msrpn1=10942&msrpn1_PInfo=8-%7C0%7C0%7C0%7C2%7C0%7C35%7C0%7C1864%7C10942%7C0%7C&msrpn1__ftp=Smithfield,%20Madison,%20New%20York,%20USA&msrpn2=10924&msrpn2_PInfo=8-%7C0%7C0%7C0%7C2%7C0%7C35%7C0%7C1864%7C10924%7C0%7C&msrpn2__ftp=Eaton,%20Madison,%20New%20York,%20USA&msrpn3=10924&msrpn3_PInfo=8-%7C0%7C0%7C0%7C2%7C0%7C35%7C0%7C1864%7C10924%7C0%7C&msrpn3__ftp=Eaton,%20Madison,%20New%20York,%20USA&msgdy=1882&mssng0=John%20C.&mssns0=Colvin&_83004003-n_xcl=m&MSAV=1&pcat=ROOT_CATEGORY&
+h=19091183&
+dbid=6061&indiv=1&ml_rpos=2

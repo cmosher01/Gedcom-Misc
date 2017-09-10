@@ -1,0 +1,14 @@
+exporting GEDCOM:
+Destination: Default
+Format: UTF-8 (without BOM)
+Add All
+Exclude: only Place records
+Media Records: Use Existing
+Same Sex: Include in Asymmetric Format
+
+
+
+"Custom ID" is REFN
+"Automated Record ID" is RIN
+
+HEAD._ROOT points to home individual
