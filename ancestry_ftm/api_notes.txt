@@ -133,6 +133,8 @@ pid=1123412&
 op=orempid-sbuser-ptuser-linkedrecordsall-usernamesall&
 client=AncestrySearch
 
+http://search.ancestry.com/content/pages/ajax/RecordSetDataModelAJAXHandler.ashx?dbid={DBID}&pid={PID}&op=orempid-sbuser-ptuser-linkedrecordsall-usernamesall&client=AncestrySearch
+
 
 This determines what records to return:
 op=orempid-sbuser-ptuser-linkedrecordsall-usernamesall
@@ -175,7 +177,7 @@ sbuser:
       "Orems": null,
       "Comments": null,
       "OremChngUsers": null,
-      "Shoeboxes": [
+      "Shoeboxes": [     <-------------------------------------------
 
       ],
       "Trees": null,
@@ -209,7 +211,7 @@ ptuser:  ********************
       "Comments": null,
       "OremChngUsers": null,
       "Shoeboxes": null,
-      "Trees": [
+      "Trees": [     <-------------------------------------------
         {
           "UserId": "0065664A-0000-0000-0000-000000000000",
           "DateSaved": "/Date(-62135571600000)/",
