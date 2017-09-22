@@ -9,9 +9,10 @@ fi
 gedcom-unnote -c 60 -d | \
 gedcom-unnote -c 60 -n inline | \
 gedcom-refn | \
-gedcom-ed -c 60 -w '.HEAD.SOUR' --update=FTM -R | \
 gedcom-sort -c 60 -s -u | \
+gedcom-uid -c 60 | \
 tee orig.ged | \
+gedcom-ed -c 60 -w '.HEAD.SOUR' --update=FTM -R | \
 gedcom-notary -c 60 -w '.INDI.*.DATE"[^0-9].*"' -i sibling | \
 gedcom-notary -c 60 -w '.SOUR.TEXT' -i sibling -d | \
 gedcom-notary -c 60 -w '.OBJE.REFN' -i sibling -d | \
