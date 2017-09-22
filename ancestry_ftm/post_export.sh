@@ -13,7 +13,6 @@ subm=$(grep '^0 @.*@ SUBM' "$1" | cut -d' ' -f2)
 
 dos2unix "$2"
 cat "$2" | \
-# gedcom-fixancestryexport UTF8 | \    Uncomment for Ancestry export
 gedcom-notary -c 60 -w '.INDI.*.NOTE' -x sibling -d | \
 gedcom-notary -c 60 -w '.SOUR.NOTE' -x sibling | \
 gedcom-notary -c 60 -w '.OBJE.NOTE' -x sibling | \
