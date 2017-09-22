@@ -23,8 +23,8 @@ if [ ! -r $n.xy ] ; then
     exit 1
 fi
 
-gedcom-select -g $i -w '.INDI._XY' <$n.xy | \
-gedcom-pointees -g $i -f $n.skel.ids | \
-gedcom-extract -g $i -f $n.skel.ids >$n.ged
+gedcom-select -g $i -w '.INDI._XY' <$n.xy >$n.indi.ids
+gedcom-pointees -g $i <$n.indi.ids -f $n.skel.ids >$n.full.ids
+gedcom-extract -g $i <$n.full.ids -f $n.skel.ids >$n.ged
 
 gramps -q -i $n.ged -a tool -p name=verify >$n.gramps.verify 2>&1
