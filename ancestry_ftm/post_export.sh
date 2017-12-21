@@ -19,6 +19,12 @@ gedcom-notary -c 60 -w '.OBJE.NOTE' -x sibling | \
 gedcom-unnote -c 60 -d | \
 gedcom-unnote -c 60 -n inline | \
 gedcom-unftmevent -t _XY | \
+gedcom-eventize -c 60 -w '.INDI._EXCM' -t excommunication | \
+gedcom-eventize -c 60 -w '.INDI._FUN' -t funeral | \
+gedcom-eventize -c 60 -w '.INDI._MILT' -t military | \
+gedcom-eventize -c 60 -w '.*.RESI' | \
+gedcom-fixdate -c 60 | \
 gedcom-restoreids -c 60 -g "$1" -w '.REPO.NAME' -w '.*.REFN' | \
-gedcom-sort -c 60 -s -u | \
+gedcom-fixftmpubl -c 60 | \
+gedcom-sort -c 60 -u | \
 sed -e "s/ SUBM @.*@/ SUBM $subm/" -e "s/0 @.*@ SUBM/0 $subm SUBM/"

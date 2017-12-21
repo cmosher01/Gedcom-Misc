@@ -3,10 +3,6 @@
 # This script was for my 2017-08 merging from Ancestry.com exported Gedcom
 # back into my originla GEDCOM files.
 
-fix="java -jar /home/user/dev/github_cmosher01/Gedcom-Fixer/build/libs/gedcom-fixer-1.0.0-SNAPSHOT-all.jar"
-match="java -jar /home/user/dev/github_cmosher01/Gedcom-Matcher/build/libs/gedcom-matcher-1.0.0-SNAPSHOT-all.jar"
-uniqify="java -jar /home/user/dev/github_cmosher01/Gedcom-Uid/build/libs/gedcom-uid-1.0.0-SNAPSHOT-all.jar"
-
 show_help() {
     echo "usage: $0 [-fv] ancestry.ged original.ged" >&2
 }
@@ -46,7 +42,7 @@ if $verbose ; then
     echo "Fixing original file: $orig_ged"
 fi
 cp "$orig_ged" ./original.ged
-$fix original.ged >original.fix.ged 2>original.report
+gedcom-fixer original.ged >original.fix.ged 2>original.report
 # also creates original.ged.ids
 
 if $verbose ; then
@@ -57,8 +53,8 @@ if $force ; then
     get=mv
 fi
 $get "$ancs_ged" ./ancestry.ged
-$uniqify ancestry.ged >ancestry.uid.ged 2>/dev/null
-$fix ancestry.uid.ged original.ged.ids >ancestry.fix.ged 2>ancestry.report
+gedcom-uid ancestry.ged >ancestry.uid.ged
+gedcom-fixer ancestry.uid.ged original.ged.ids >ancestry.fix.ged 2>ancestry.report
 # also creates (useless) ancestry.uid.ged.ids
 
 
@@ -66,8 +62,8 @@ $fix ancestry.uid.ged original.ged.ids >ancestry.fix.ged 2>ancestry.report
 if $verbose ; then
     echo "Attempting to match files..."
 fi
-$match original.fix.ged ancestry.fix.ged >matched.ged 2>match.report
-$fix matched.ged >matched.fix.ged 2>fix.matched.report
+gedcom-matcher original.fix.ged ancestry.fix.ged >matched.ged 2>match.report
+gedcom-fixer matched.ged >matched.fix.ged 2>fix.matched.report
 diff -d -u -F '^0 ' ./original.fix.ged ./matched.fix.ged >match.diff || true
 
 echo '----------' >reports.txt
