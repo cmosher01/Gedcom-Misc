@@ -16,7 +16,10 @@ subm_ged="$(readlink -f "$4")"
 
 t=$(mktemp -d)
 cd $t
+
 echo "Intermediate files and reports in: $(pwd)"
+echo "Launching Sublime Edit to open that directory..."
+subl $(pwd)
 
 
 
@@ -88,4 +91,7 @@ diff -d -u0 ancestry.uniq.apid matched.uniq.apid >lost.apid.diff
 
 
 
-echo "Intermediate files and reports in: $(pwd)"
+if dialog --defaultno --yesno "Check the log and diff files now. Are the changes acceptable?" 10 50 ; then
+    cp $(pwd)/matched.ged $orig_ged
+fi
+clear
