@@ -53,7 +53,7 @@ if $force ; then
     get=mv
 fi
 $get "$ancs_ged" ./ancestry.ged
-gedcom-uid ancestry.ged >ancestry.uid.ged
+gedcom-uid <ancestry.ged >ancestry.uid.ged
 gedcom-fixer ancestry.uid.ged original.ged.ids >ancestry.fix.ged 2>ancestry.report
 # also creates (useless) ancestry.uid.ged.ids
 
