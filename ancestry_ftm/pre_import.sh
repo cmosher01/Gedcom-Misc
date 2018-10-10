@@ -31,3 +31,4 @@ gedcom-notary -c 60 -w '.SOUR.REFN' -i sibling -d
 # FTM/Ancestry tries to fieldize PUBL with
 #     Name, Location, and Date:
 #     "Name: nnn; Location: lll; Date: ddd;"
+# Sync w/Ancestry truncates PAGE (source citation detail) at 256 characters
