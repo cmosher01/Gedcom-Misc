@@ -13,7 +13,6 @@ gedcom-sort -c 60 -s -u | \
 gedcom-uid -c 60 | \
 tee orig.ged | \
 gedcom-ed -c 60 -w '.HEAD.SOUR' --update=FTM -R | \
-gedcom-notary -c 60 -w '.INDI.*.DATE"[^0-9].*"' -i sibling | \
 gedcom-notary -c 60 -w '.SOUR.TEXT' -i sibling -d | \
 gedcom-notary -c 60 -w '.OBJE.REFN' -i sibling -d | \
 gedcom-notary -c 60 -w '.SOUR.REFN' -i sibling -d
@@ -32,3 +31,7 @@ gedcom-notary -c 60 -w '.SOUR.REFN' -i sibling -d
 #     Name, Location, and Date:
 #     "Name: nnn; Location: lll; Date: ddd;"
 # Sync w/Ancestry truncates PAGE (source citation detail) at 256 characters
+
+# This saved too many dates, and became more of an
+# annoyance than a help:
+# gedcom-notary -c 60 -w '.INDI.*.DATE"[^0-9].*"' -i sibling | \

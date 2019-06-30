@@ -24,7 +24,7 @@ gedcom-eventize -c 60 -w '.INDI._FUN' -t funeral | \
 gedcom-eventize -c 60 -w '.INDI._MILT' -t military | \
 gedcom-eventize -c 60 -w '.*.RESI' | \
 gedcom-fixdate -c 60 | \
-gedcom-restoreids -c 60 -g "$1" -w '.REPO.NAME' -w '.*.REFN' | \
+gedcom-restoreids -c 60 -g "$1" -w '.REPO.NAME' -w '.SOUR.TITL' -w '.*.REFN' | \
 gedcom-fixftmpubl -c 60 | \
 gedcom-sort -c 60 -u | \
 sed -e "s/ SUBM @.*@/ SUBM $subm/" -e "s/0 @.*@ SUBM/0 $subm SUBM/"

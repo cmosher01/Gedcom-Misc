@@ -41,7 +41,10 @@ $here/post_export.sh original.std.ged ftm.ged >ftm.fix.ged
 ancestry-gedcom-download $anc_tree ancestry.bad.ged
 echo "Fixing Ancestry.com file"
 dos2unix ancestry.bad.ged
-gedcom-fixancestryexport UTF8 <ancestry.bad.ged >ancestry.ged
+cat <ancestry.bad.ged | \
+sed 's,<a:unknown>.*</a:unknown>$,,' | \
+gedcom-fixancestryexport UTF8 | \
+cat >ancestry.ged
 
 cat <ancestry.ged | \
 gedcom-uid | \
