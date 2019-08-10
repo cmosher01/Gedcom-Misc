@@ -11,6 +11,7 @@ me="$(readlink -f "$0")"
 here="$(dirname "$me")"
 orig_ged="$(readlink -f "$1")"
 ftm_ged="$(readlink -f "$2")"
+anc_ged="$(readlink -f "$3.anc.ged")"
 anc_tree="$3"
 subm_ged="$(readlink -f "$4")"
 
@@ -20,6 +21,20 @@ cd $t
 echo "Intermediate files and reports in: $(pwd)"
 echo "Launching Sublime Edit to open that directory..."
 subl $(pwd)
+
+
+
+echo "Looking for $3.anc.ged ..."
+if [ -r $anc_ged ] ; then
+    echo "Found; will read $anc_ged"
+    cp $anc_ged ancestry.bad.ged
+else
+    echo "File not found; will try to download from Ancestry.com ..."
+    if ! ancestry-gedcom-download $anc_tree ancestry.bad.ged ; then
+        echo "Aborting operation now."
+        exit 1
+    fi
+fi
 
 
 
@@ -36,9 +51,6 @@ echo "Fixing FTM file: $ftm_ged"
 cp "$ftm_ged" ./ftm.ged
 $here/post_export.sh original.std.ged ftm.ged >ftm.fix.ged
 
-
-
-ancestry-gedcom-download $anc_tree ancestry.bad.ged
 echo "Fixing Ancestry.com file"
 dos2unix ancestry.bad.ged
 cat <ancestry.bad.ged | \

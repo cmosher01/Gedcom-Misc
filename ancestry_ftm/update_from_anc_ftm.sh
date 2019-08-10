@@ -24,16 +24,22 @@ assuming it has been syncronized.
 The file names are determined from the single input
 parameter as follows:
 
-given parameter:        TREE_YYYY-MM-DD-HH-MM-SS
-original file:          ./TREE.ged
-FTM export:             $dirwin/TREE_YYYY-MM-DD-HH-MM-SS.ged
-Ancstry.com tree name:  TREE
+    given parameter:        TREE_YYYY-MM-DD-HH-MM-SS
+    original file:          ./TREE.ged
+    FTM export:             $dirwin/TREE_YYYY-MM-DD-HH-MM-SS.ged
+    Ancstry.com tree name:  TREE
 
 Credentials for logging in to Ancestry.com must be
 specified in ~/.ancestry.properties as:
 
     username=YourAncestryUserName
     password=YourPassword
+
+If automatic download doesn't work, then manually download
+the export GEDCOM file from Ancestry.com, and name it as
+follows:
+
+    Ancstry.com GEDCOM:     TREE.anc.ged
 
 
 
