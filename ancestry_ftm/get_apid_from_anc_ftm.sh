@@ -59,8 +59,10 @@ gedcom-fixancestryexport UTF8 | \
 cat >ancestry.ged
 
 cat <ancestry.ged | \
+sed 's/ *$//' | \
 gedcom-uid | \
 gedcom-lib -c 60 -u | \
+sed 's/ *$//' | \
 gedcom-fixdate -c 60 | \
 gedcom-notary -c 60 -w '.SOUR.NOTE' -x sibling | \
 gedcom-tagfromnote -c 60 -x _UID -n REFN | \
@@ -79,6 +81,7 @@ gedcom-restoreids -c 60 -g ftm.fix.ged \
 gedcom-restoreids -c 60 -g ftm.fix.ged \
     -w '.FAM.HUSB' \
     -w '.FAM.WIFE' \
+    -w '.FAM.MARR.DATE' \
     | \
 gedcom-sort -c 60 | \
 cat >ancestry.fix.ged

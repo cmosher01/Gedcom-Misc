@@ -1,7 +1,7 @@
 #!/bin/bash
 
 dirwin=~/dev/local/wingeneal/shared
-dirtools=~/dev/github_cmosher01/genealogical-data/tools
+dirtools=~/dev/github_cmosher01/genealogical-data-private/tools
 
 
 if [ $# != 1 ] ; then
