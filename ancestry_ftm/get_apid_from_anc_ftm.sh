@@ -10,7 +10,7 @@ me="$(readlink -f "$0")"
 here="$(dirname "$me")"
 orig_ged="$(readlink -f "$1")"
 ftm_ged="$(readlink -f "$2")"
-subm_ged="$(readlink -f "$4")"
+subm_ged="$(readlink -f "$3")"
 
 t=$(mktemp -d)
 cd $t
