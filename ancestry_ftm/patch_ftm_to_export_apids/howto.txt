@@ -1,0 +1,70 @@
+Clean install of FTM (2019 in this case), run it to make sure it's fully set up
+
+Delete from Windows native cache:  "C:\Windows\assembly\NativeImages_v4.0.30319_64\PlM\"
+
+"sn -Vr *" to prevent strong name (checksum) verification
+
+
+
+We need to patch the .NET assembly: PlM.dll (that's a lower-case ell) (stands for "Plan Module")
+
+We want to patch the IncludeGUID settings for the Gedcom55 export.
+
+It is in PlM.dll, FTM.UI.PlanModule namespace, ExportDialog class, RunExport() method.
+
+Existing code (decompiled to C#):
+
+    if (this._selectedFormat == ExportFormats.GedcomAncestry || this._selectedFormat == ExportFormats.GedcomMyCanvas)
+    {
+        ((GedcomExportProvider)this._exporter).GedcomCharSet = GedcomCharSet.Ansel;
+        ((GedcomExportProvider)this._exporter).IncludeGUID = true;
+        ((GedcomExportProvider)this._exporter).IsGedzExport = true;
+        this._createZip = true;
+        this._exporter.ExportHighResolutionImages = (this._selectedFormat == ExportFormats.GedcomMyCanvas);
+    }
+
+Patch it to something more like the following. It amounts to just turning on the "IncludeGUID" setting:
+
+    // use Ancestry export for our Gedcom55 export
+    if (this._selectedFormat == ExportFormats.Gedcom55 || this._selectedFormat == ExportFormats.GedcomMyCanvas)
+    {
+        // skip this (leave charset as UTF-8)
+        // ((GedcomExportProvider)this._exporter).GedcomCharSet = GedcomCharSet.Ansel;
+
+        // export _APID and _GUID ******** This is the important part.
+        ((GedcomExportProvider)this._exporter).IncludeGUID = true;
+
+        // don't export media files themselves (too huge and too slow)
+        ((GedcomExportProvider)this._exporter).IsGedzExport = false;
+
+        // don't create a zip file, just export the ged file itself, uncompressed
+        this._createZip = false;
+
+        // just leave this as-is, no harm no foul
+        this._exporter.ExportHighResolutionImages = (this._selectedFormat == ExportFormats.GedcomMyCanvas
+    }
+
+
+
+Use https://hexed.it/ to open PlM.dll, then patch 4 bytes as follows:
+
+    /* 0x000089AF 02           */ IL_00FB: ldarg.0
+    /* 0x000089B0 7B97000004   */ IL_00FC: ldfld     valuetype FTM.UI.PlanModule.ExportFormats FTM.UI.PlanModule.ExportDialog::_selectedFormat
+-   /* 0x000089B5 1F0A         */ IL_0101: ldc.i4.s  10
+-   /* 0x000089B7 2E0D         */ IL_0103: beq.s     IL_0112
++   /* 0x000089B5 1F09         */ IL_0101: ldc.i4.s  9
++   /* 0x000089B7 2E1E         */ IL_0103: beq.s     IL_0123
+
+
+
+
+-   /* 0x000089F3 17           */ IL_013F: ldc.i4.1
++   /* 0x000089F3 16           */ IL_013F: ldc.i4.0
+    /* 0x000089F4 6FAD02000A   */ IL_0140: callvirt  instance void [FTM.Import]FTM.Export.GedcomExportProvider::set_IsGedzExport(bool)
+    /* 0x000089F9 02           */ IL_0145: ldarg.0
+-   /* 0x000089FA 17           */ IL_0146: ldc.i4.1
++   /* 0x000089FA 16           */ IL_0146: ldc.i4.0
+    /* 0x000089FB 7DA0000004   */ IL_0147: stfld     bool FTM.UI.PlanModule.ExportDialog::_createZip
+
+Then "Export" (to Downloads folder), and copy the file over top of
+C:\Program Files\Family Tree Maker 2019\PlM.dll
