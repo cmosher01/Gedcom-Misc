@@ -46,19 +46,19 @@ tre="${tre,,}"
 
 gedloc="$(readlink -f "$tre.ged")"
 if [ ! -r "$gedloc" ] ; then
-    echo "Cannot find $gedloc" >&2
+    echo "FTM-UPDATE: Cannot find $gedloc" >&2
     exit 1
 fi
 
 gedftm="$(readlink -f "$dirwin/$usrarg.ftm.ged")"
 if [ ! -r "$gedftm" ] ; then
-    echo "Cannot find $gedftm" >&2
+    echo "FTM-UPDATE: Cannot find $gedftm" >&2
     exit 1
 fi
 
 echo "$here/get_apid_from_anc_ftm.sh \\"
 echo "    $gedloc \\"
 echo "    $gedftm \\"
-echo "    $dirtools/subm.ged"
+echo "    $dirtools/subm.ged" >&2
 
 $here/get_apid_from_anc_ftm.sh $gedloc $gedftm $dirtools/subm.ged

@@ -15,22 +15,23 @@ subm_ged="$(readlink -f "$3")"
 t=$(mktemp -d)
 cd $t
 
-echo "Intermediate files and reports in: $(pwd)"
-echo "Launching Sublime Edit to open that directory..."
-subl $(pwd)
+echo "FTM-UPDATE: Intermediate files and reports in: $(pwd)" >&2
 
 
 
-cp "$orig_ged" ./original.ged
+echo "FTM-UPDATE: Begin processing original file..." >&2
+
+cp -v "$orig_ged" ./original.ged
 
 cat <original.ged | \
-gedcom-lib -c 60 -u | \
 gedcom-sort -c 60 | \
 cat >original.std.ged
 
 
 
-cp "$ftm_ged" ./ftm.ged
+echo "FTM-UPDATE: Begin processing FTM file..." >&2
+
+cp -v "$ftm_ged" ./ftm.ged
 
 $here/post_export.sh original.std.ged ftm.ged |
 gedcom-unnote -c 60 -d | \
@@ -40,14 +41,14 @@ gedcom-restorehead -c 60 -g $subm_ged | \
 gedcom-sort -c 60 -s | \
 cat >matched.ged
 
+# TODO gedcom-check-len ???
 
-
+echo "FTM-UPDATE: Calculating differences..." >&2
 diff -d -u -F '^0 ' ./original.ged ./matched.ged >matched.diff
 
 
 
-echo "Intermediate files and reports in: $(pwd)"
-read -r -p 'Check the log and diff files now. Are the changes acceptable? (y,n) <N> ' response
-if [ "$response" = "y" ] ; then
-    cp $(pwd)/matched.ged $orig_ged
-fi
+echo "FTM-UPDATE: Intermediate files and reports in: $(pwd)" >&2
+cp $(pwd)/matched.ged $orig_ged
+
+gedcom-lib --model <matched.ged >/dev/null
