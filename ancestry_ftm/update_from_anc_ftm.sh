@@ -1,10 +1,10 @@
-#!/bin/bash
+#!/bin/bash -e
 
 dirwin=~/dev/local/wingeneal/shared
 dirtools=~/dev/github_cmosher01/genealogical-data-private/tools
 
 
-if [ $# != 1 ] ; then
+if [ "$1" = "-h" -o "$1" = "--help" ] ; then
 cat - >&2 <<EOF
 
 Top-level shell script to update local GEDCOM file
@@ -21,9 +21,9 @@ parameter as follows:
     original file:          ./TREE.ged
     FTM export:             $dirwin/TREE_YYYY-MM-DD-HH-MM-SS.ged
 
+If no parameter is given, then it defaults to using the latest file.
 
-
-usage: $0 TREE_YYYY-MM-DD-HH-MM-SS
+usage: $0 [ TREE_YYYY-MM-DD-HH-MM-SS ]
 
 where TREE_YYYY-MM-DD-HH-MM-SS is the name of the tree
 (everything from the first "." to the end is ignored)
@@ -38,7 +38,22 @@ fi
 me="$(readlink -f "$0")"
 here="$(dirname "$me")"
 
-usrarg="${1%%.*}"
+
+
+if [ -z "$1" ] ; then
+    usrarg="$(ls -tp "$dirwin" | grep -v /$ | head -1)"
+    echo "$(date -uIns)  latest file:  $usrarg"
+    read -r -p "$(date -uIns)  OK to use that file? (y,n) <Y> " response
+    if [ "$response" != "y" -a "$response" != "Y" -a "$response" != "" ] ; then
+        exit 1
+    fi
+    usrarg="${usrarg%%.*}"
+else
+    usrarg="${1%%.*}"
+fi
+
+
+
 echo "using: $usrarg"
 tre="${usrarg}"
 tre="${tre%_*}"
@@ -62,3 +77,5 @@ echo "    $gedftm \\"
 echo "    $dirtools/subm.ged" >&2
 
 $here/get_apid_from_anc_ftm.sh $gedloc $gedftm $dirtools/subm.ged
+
+# TODO accum all output messages into log file

@@ -33,22 +33,30 @@ echo "FTM-UPDATE: Begin processing FTM file..." >&2
 
 cp -v "$ftm_ged" ./ftm.ged
 
+# TODO inline post_export here
+
 $here/post_export.sh original.std.ged ftm.ged |
-gedcom-unnote -c 60 -d | \
-gedcom-unnote -c 60 -n inline | \
-gedcom-note-gc | \
 gedcom-restorehead -c 60 -g $subm_ged | \
 gedcom-sort -c 60 -s | \
 cat >matched.ged
 
-# TODO gedcom-check-len ???
 
-echo "FTM-UPDATE: Calculating differences..." >&2
-diff -d -u -F '^0 ' ./original.ged ./matched.ged >matched.diff
+echo "FTM-UPDATE: Checking for suspicious citation lengths (possibly truncated)..." >&2
+gedcom-check-len -c 60 -w .INDI.\*.SOUR.PAGE <matched.ged >&2
+echo "FTM-UPDATE: Checking for _APIDs with multiple sources (which have the potential to be merged)..." >&2
+gedcom-check-dups -c 60 -w .SOUR._APID <matched.ged >&2
+echo "FTM-UPDATE: Checking for INDIs with same REFN..." >&2
+gedcom-check-dups -c 60 -w .INDI.REFN <matched.ged >&2
+echo "FTM-UPDATE: Checking for duplicate media references..." >&2
+gedcom-check-dups -c 60 -w .OBJE.FILE <matched.ged >&2
+echo "FTM-UPDATE: Checking general parsability of GEDCOM file..." >&2
+gedcom-lib --model <matched.ged >/dev/null
+
+
+
+echo "FTM-UPDATE: Copying GEDCOM file to current directory..." >&2
+cp -v $(pwd)/matched.ged $orig_ged
 
 
 
 echo "FTM-UPDATE: Intermediate files and reports in: $(pwd)" >&2
-cp $(pwd)/matched.ged $orig_ged
-
-gedcom-lib --model <matched.ged >/dev/null
