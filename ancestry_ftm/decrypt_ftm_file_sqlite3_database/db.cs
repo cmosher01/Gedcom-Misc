@@ -25,13 +25,10 @@ csc /t:exe /out:db.exe /r:"System.Data.SQLite.dll" /platform:x86 db.cs
 
 db.exe *.ftm
 
-This program never modifies or deletes any existing files.
+option, use /D to create file in current directory instead of creating a temporary dir.
+
 It creates a copy of the original FTM (database) file in a temporary directory.
 It then creates a decrypted copy in the same directory.
-
-Then hexedit file, byte at offset 21 decimal (= 15 hex), change byte from hex 20 to hex 40.
-
-
 */ 
 
 public class SQLitePasswd {
@@ -41,27 +38,51 @@ public class SQLitePasswd {
     public static void Main(string[] args) {
         // TODO: check for existence of System.Data.SQLite.dll and SQLite.Interop.dll to prevent crash
 
-        if (args.Length <= 0) {
-            Console.WriteLine("No FTM files specified; nothing to do");
-            return;
+        bool create = true;
+        foreach (var a in args) {
+            if (a.StartsWith("/")) {
+                if (a.ToLower().Equals("/d")) {
+                    create = false;
+                }
+            }
         }
 
-        var tdir = CreateUniqueTempDirectory();
-        Console.WriteLine("Creating new output directory: {0}", tdir);
+        // always write output directory as the first line of the output file,
+        // to allow for easy and consistent parsing by batch scripts
+        string tdir;
+        if (create) {
+            tdir = CreateUniqueTempDirectory();
+            Console.WriteLine("{0}", tdir);
+            Console.WriteLine("Created new output directory: {0}", tdir);
+        } else {
+            tdir = ".";
+            Console.WriteLine("{0}", tdir);
+        }
 
+        bool any = false;
         foreach (var a in args) {
-            Console.WriteLine("------------------------------------------");
-            var f = Path.GetFullPath(a);
-            if (File.Exists(f)) {
-                copyAndDecrypt(f, tdir);
-            } else {
-                var fc = Console.ForegroundColor;
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("WARNING: input file not found; skipping: {0}", f);
-                Console.ForegroundColor = fc;
+            if (!a.StartsWith("/")) {
+                any = true;
+                Console.WriteLine("------------------------------------------");
+                var f = Path.GetFullPath(a);
+                if (File.Exists(f)) {
+                    copyAndDecrypt(f, tdir);
+                } else {
+                    var fc = Console.ForegroundColor;
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("WARNING: input file not found; skipping: {0}", f);
+                    Console.ForegroundColor = fc;
+                }
             }
         }
         Console.WriteLine("------------------------------------------");
+        if (!any) {
+            Console.WriteLine("No FTM files specified; nothing to do");
+        }
+
+        // always write output directory as the last line of the output file,
+        // to allow for easy and consistent parsing by batch scripts
+        Console.WriteLine("{0}", tdir);
     }
 
     static void copyAndDecrypt(string f, string tdir) {
@@ -105,7 +126,7 @@ public class SQLitePasswd {
             cnn.Open();
             Console.WriteLine("Decrypting database...");
             cnn.ChangePassword((String)null);
-            Console.WriteLine("Decryption completed.");
+            Console.WriteLine("Decryption complete.");
         } finally {
             if (cnn != null && cnn.State != System.Data.ConnectionState.Closed) {
                 cnn.Close();
@@ -120,12 +141,13 @@ public class SQLitePasswd {
         }
         Console.WriteLine("Patch complete.");
 
+        Console.Write("Checking magic bytes of decrypted file...");
         using (BinaryReader br = new BinaryReader(File.Open(decr, FileMode.Open, FileAccess.Read))) {
             byte[] magic = br.ReadBytes(0x10);
             var smag = String.Concat(Array.ConvertAll(magic, x => (char)x));
-            Console.WriteLine("Magic bytes of decrypted file: {0} == {1}",
+            Console.WriteLine("Magic bytes: {0} == {1}",
                 String.Concat(Array.ConvertAll(magic, x => x.ToString("X2"))),
-                smag);
+                smag.Replace("\0", String.Empty));
 
             var fc = Console.ForegroundColor;
             if (smag.Equals(sql3magic)) {
