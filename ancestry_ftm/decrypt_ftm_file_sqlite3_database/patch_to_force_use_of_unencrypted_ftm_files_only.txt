@@ -1,0 +1,36 @@
+Clean install of FTM (2019 in this case), run it to make sure it's fully set up
+
+Delete from Windows native cache:  "C:\Windows\assembly\NativeImages_v4.0.30319_64\FTM.Data.NextDB\"
+
+"sn -Vr *" to prevent strong name (checksum) verification (may not be necessary)
+
+We need to patch the .NET assembly: FTM.Data.NextDB.dll
+
+To force FTM to work with unencrypted FTM files (and only unencrypted ones),
+remove password calculation algorithm, and just set all passwords to empty strings.
+
+
+Use https://hexed.it/
+
+
+FTM.Data.NextDB:NextDbUtilHelper class, GetE method
+(change one byte at offset B0FE):
+from:
+        /* 0x0000B0FE 3107         */ IL_0002: ble.s     IL_000B
+to:
+        /* 0x0000B0FE 3007         */ IL_0002: bgt.s     IL_000B
+
+
+
+Then "Export" (to Downloads folder), and copy the file over top of
+C:\Program Files\Family Tree Maker 2019\FTM.Data.NextDB.dll
+
+
+
+
+To restore FTM to original, delete patched FTM.Data.NextDB.dll, then
+use "Uninstall or change a program", right-click FTM and choose "Repair"
+
+
+Note: you will need to decrypt all your FTM files (before the first time you
+use them only). Use db.cs to do that.

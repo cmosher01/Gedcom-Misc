@@ -253,7 +253,37 @@ common tables linked to:
  2 Fact
  5 Person
  7 Relationship
+ 9 Task
 13 MediaFile
 16 Source
 
+select linktableid as parent, max('fact') as child from fact group by linktableid union
+select linktableid, max('medialink') from medialink group by linktableid union
+select linktableid, max('note') from note group by linktableid union
+select linktableid, max('sourcelink') from sourcelink group by linktableid union
+select linktableid, max('taglink') from taglink group by linktableid union
+select linktableid, max('task') from task group by linktableid union
+select linktableid, max('weblink') from weblink group by linktableid;
+
+parent      child     
+----------  ----------
+2           medialink 
+2           note      
+2           sourcelink
+
+5           fact      
+5           medialink 
+5           note      
+5           task      
+
+7           fact      
+
+9           taglink   
+
+13          taglink   
+
+16          medialink 
+16          weblink   
 */
+
+

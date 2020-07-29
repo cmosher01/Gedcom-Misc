@@ -2,7 +2,7 @@ Clean install of FTM (2019 in this case), run it to make sure it's fully set up
 
 Delete from Windows native cache:  "C:\Windows\assembly\NativeImages_v4.0.30319_64\PlM\"
 
-"sn -Vr *" to prevent strong name (checksum) verification
+"sn -Vr *" to prevent strong name (checksum) verification (may not be necessary)
 
 
 
@@ -68,3 +68,9 @@ Use https://hexed.it/ to open PlM.dll, then patch 4 bytes as follows:
 
 Then "Export" (to Downloads folder), and copy the file over top of
 C:\Program Files\Family Tree Maker 2019\PlM.dll
+
+
+
+
+To restore FTM to original, delete patched PlM.dll, then
+use "Uninstall or change a program", right-click FTM and choose "Repair"
