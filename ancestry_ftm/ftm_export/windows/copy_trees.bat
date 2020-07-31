@@ -1,5 +1,5 @@
 echo on
-rem copy FTM media directories
+rem copy FTM tree files
 
 set gs= ^
 root ^
@@ -35,9 +35,7 @@ set dstdir=\\VBOXSVR\shared\FTM_DOCUMENTS
 pushd "%dstdir%"
 
 (for %%g in (%gs%) do (
-    del /f /q /s "%%g Media\*.*" > nul
-    rmdir /q /s "%%g Media"
-    xcopy "%srcdir%\%%g Media" "%%g Media" /f /i
+    copy /y "%srcdir%\%%g.ftm" .\
 ))
 
 popd

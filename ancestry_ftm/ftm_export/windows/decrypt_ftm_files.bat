@@ -21,6 +21,7 @@ Tutankhamun.ftm ^
 rapp_kansas.ftm ^
 Roth.ftm ^
 Murray_Lougheed_Wilson_Vandever.ftm ^
+bryan_nc.ftm ^
 rollo_research.ftm ^
 Sandys.ftm ^
 

@@ -1,6 +1,6 @@
 #cs ----------------------------------------------------------------------------
 
- AutoIt Version: 3.3.14.2
+ AutoIt Version: 3.3.14.5
  Author:         Chris Mosher
 
  Script Function:
@@ -15,7 +15,8 @@
 
 
 Func Now()
-	Local $t = _Date_Time_SystemTimeToDateTimeStr(_Date_Time_GetSystemTime(), 1)
+	Local $tTime = _Date_Time_GetSystemTime()
+	Local $t = _Date_Time_SystemTimeToDateTimeStr($tTime, 1)
 	$t = StringReplace($t, "/", "-")
 	$t = StringReplace($t, " ", "-")
 	$t = StringReplace($t, ":", "-")
@@ -81,7 +82,7 @@ Send("{ENTER}")
 
 
 
-Local $winSave = WinWaitActive("Export to", "Save", 17)
+Local $winSave = WinWaitActive("Export to", "Save", 27)
 If $winSave = 0 Then
 	MsgBox($MB_ICONWARNING, "AutoIT", "Cannot open Export-to window.")
 	Exit
@@ -90,7 +91,6 @@ EndIf
 Local $now = Now()
 Local $filenameBase = $nameTree & "_" & $now
 Local $filenameFtm = $filenameBase & ".ftm.ged"
-;~ Local $filenameAnc = $filenameBase & ".anc.ged"
 
 ; Use this (i.e., paste from the clipboard) as the argument to update_from_anc_ftm.sh
 If ClipPut($filenameBase) = 0 Then
@@ -101,13 +101,13 @@ Sleep(83)
 ; in the filename text box, delete the current name
 Send("{BACKSPACE}")
 ; and then type in the new name (and directory)
-; Example: "\\VBOXSVR\shared\Mosher_2018-01-18-18-27-23.ftm.ged"
-Send("\\VBOXSVR\shared\" & $filenameFtm)
+; Example: "\\VBOXSVR\shared\FTM_DOCUMENTS\Mosher_2018-01-18-18-27-23.ftm.ged"
+Send("\\VBOXSVR\shared\FTM_DOCUMENTS\" & $filenameFtm)
 Send("{ENTER}")
 
 
 
-Local $winStatus = WinWaitActive("Export Status", "OK", 17)
+Local $winStatus = WinWaitActive("Export Status", "OK", 27)
 If $winStatus = 0 Then
 	MsgBox($MB_ICONWARNING, "AutoIT", "Cannot find Export-Status window.")
 	Exit
@@ -120,52 +120,3 @@ If Not StringRegExp(StringLower($status), ".*success.*") Then
 	MsgBox($MB_ICONWARNING, "AutoIT", "Export was not successful.")
 	Exit
 EndIf
-
-
-
-;~ $ie = _IECreate()
-;~ _IENavigate($ie, "https://www.ancestry.com/")
-;~ Sleep(2345)
-
-;~ _IELoadWait($ie)
-;~ _IELinkClickByText($ie, "Trees")
-;~ Sleep(2345)
-;~ _IELinkClickByText($ie, $nameTree)
-;~ Sleep(3456)
-;~ _IELoadWait($ie)
-;~ _IELinkClickByText($ie, "Tree Settings")
-;~ Sleep(3456)
-
-;~ _IELoadWait($ie)
-;~ Local $buttonExport = _IEGetObjById($ie, "exportTreeLink")
-;~ Local $i = 0
-;~ While Not @error = 0
-;~ 	Sleep(1234)
-;~ 	$buttonExport = _IEGetObjById($ie, "exportTreeLink")
-;~ 	$i = $i+1
-;~ 	If $i > 43 Then
-;~ 		MsgBox($MB_ICONWARNING, "AutoIT", "Cannot find Export button.")
-;~ 		Exit
-;~ 	EndIf
-;~ WEnd
-
-;~ _IEAction($buttonExport, "scrollintoview")
-;~ _IEAction($buttonExport, "click")
-
-;~ _IELoadWait($ie)
-
-
-
-;~ MsgBox($MB_ICONINFORMATION, "AutoIT", "Wait for it, then click DOWNLOAD GEDCOM and choose Save As...")
-
-
-
-;~ Local $winSaveAs = WinWaitActive("Save As", "", 127)
-;~ If $winSaveAs = 0 Then
-;~ 	MsgBox($MB_ICONWARNING, "AutoIT", "Cannot find Save-As dialog box.")
-;~ 	Exit
-;~ EndIf
-;~ Sleep(83)
-;~ Send("{BACKSPACE}")
-;~ Send("\\VBOXSVR\shared\" & $filenameAnc)
-;~ Send("{ENTER}")

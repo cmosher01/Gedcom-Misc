@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-dirwin=~/dev/local/wingeneal/shared
+dirwin=~/dev/local/wingeneal/shared/FTM_DOCUMENTS
 dirtools=~/dev/github_cmosher01/genealogical-data-private/tools
 
 
@@ -41,7 +41,7 @@ here="$(dirname "$me")"
 
 
 if [ -z "$1" ] ; then
-    usrarg="$(ls -tp "$dirwin" | grep -v /$ | head -1)"
+    usrarg="$(ls -tp "$dirwin/"*.ftm.ged | grep -v /$ | head -n 1 | xargs -n 1 basename)"
     echo "$(date -uIns)  latest file:  $usrarg"
     read -r -p "$(date -uIns)  OK to use that file? (y,n) <Y> " response
     if [ "$response" != "y" -a "$response" != "Y" -a "$response" != "" ] ; then
