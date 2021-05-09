@@ -29,7 +29,7 @@ option, use /D to create file in current directory instead of creating a tempora
 
 It creates a copy of the original FTM (database) file in a temporary directory.
 It then creates a decrypted copy in the same directory.
-*/ 
+*/
 
 public class SQLitePasswd {
     const string password = "aes256:ViDfwQnOAX8IGG5T5xs3yyBOryIqfPu6";
@@ -180,110 +180,3 @@ public class SQLitePasswd {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-Data info
----------
-Date format is related to Julian Day times 512
-
-
-LinkTableID refers to tables (defined in FTM.Data.DB.dll: FTM.Data.DB/TableID enum):
-  0 Assertion,
-  1 ChildRelationship,
-  2 Fact,
-  3 FactType,
-  4 Note,
-  5 Person,
-  6 Place,
-  7 Relationship,
-  8 Setting,
-  9 Task,
- 10 MasterSource,
- 11 Category,
- 12 Repository,
- 13 MediaFile,
- 14 MediaLink,
- 15 FileCategoryRel,
- 16 Source,
- 17 SourceLink,
- 18 TaskCategory,
- 19 TaskCategoryRel,
- 20 History,
- 21 Publication,
- 22 HistoryList,
- 23 Deleted,
- 24 Cache,
- 25 WebLink,
- 26 Tag,
- 27 TagLink,
- 28 MediaFileBookmark,
- 29 SettingURLBookmark,
- 30 PersonExternal,
- 31 ChangeMacroCommand,
- 32 ChangeCommand,
- 33 DynamicFilter,
- 34 DynamicFilterItem,
- 35 Watermark,
- 36 DnaMatch,
- 37 CompactChangesForUndo,
- 38 MediaFileOriginal,
-
-
-Tables with LinkTableID column:
-Fact
-MediaLink
-Note
-SourceLink
-TagLink
-Task
-WebLink
-
-common tables linked to:
- 2 Fact
- 5 Person
- 7 Relationship
- 9 Task
-13 MediaFile
-16 Source
-
-select linktableid as parent, max('fact') as child from fact group by linktableid union
-select linktableid, max('medialink') from medialink group by linktableid union
-select linktableid, max('note') from note group by linktableid union
-select linktableid, max('sourcelink') from sourcelink group by linktableid union
-select linktableid, max('taglink') from taglink group by linktableid union
-select linktableid, max('task') from task group by linktableid union
-select linktableid, max('weblink') from weblink group by linktableid;
-
-parent      child     
-----------  ----------
-2           medialink 
-2           note      
-2           sourcelink
-
-5           fact      
-5           medialink 
-5           note      
-5           task      
-
-7           fact      
-
-9           taglink   
-
-13          taglink   
-
-16          medialink 
-16          weblink   
-*/
-
-

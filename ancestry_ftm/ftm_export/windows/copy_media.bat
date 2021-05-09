@@ -1,44 +1,6 @@
 echo on
-rem copy FTM media directories
+rem rsync FTM_DOCUMENTS from local home dir to VBox shared dir
 
-set gs= ^
-root ^
-Joseph ^
-Colvin ^
-Disosway ^
-Flandreau ^
-Harrison ^
-Justice ^
-Lopez ^
-Lovejoy ^
-McLaughlin ^
-Mosher ^
-Pettit ^
-Romero ^
-Spohner ^
-Taylorson ^
-Tutankhamun ^
-rapp_kansas ^
-Roth ^
-Murray_Lougheed_Wilson_Vandever ^
-bryan_nc ^
-rollo_research ^
-Sandys ^
+C:\Users\vagrant\rsync\bin\rsync.exe -ltvihPr --super --stats /cygdrive/c/Users/vagrant/FTM_DOCUMENTS/ //VBOXSVR/shared/FTM_DOCUMENTS/
 
-
-
-
-
-set srcdir=C:\Users\vagrant\FTM_DOCUMENTS
-set dstdir=\\VBOXSVR\shared\FTM_DOCUMENTS
-
-pushd "%dstdir%"
-
-(for %%g in (%gs%) do (
-    del /f /q /s "%%g Media\*.*" > nul
-    rmdir /q /s "%%g Media"
-    xcopy "%srcdir%\%%g Media" "%%g Media" /f /i
-))
-
-popd
 pause
