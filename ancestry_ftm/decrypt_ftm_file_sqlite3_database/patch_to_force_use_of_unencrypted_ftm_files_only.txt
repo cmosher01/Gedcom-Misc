@@ -32,5 +32,8 @@ To restore FTM to original, delete patched FTM.Data.NextDB.dll, then
 use "Uninstall or change a program", right-click FTM and choose "Repair"
 
 
+
 Note: you will need to decrypt all your FTM files (before the first time you
-use them only). Use db.cs to do that.
+use them only). Use db.cs to do that (see decrypt_ftm_files.bat).
+Then you need to manually patch the resulting SQLite database header
+(see clean_descytped_ftm_db.sh bash script).
