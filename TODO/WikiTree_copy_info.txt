@@ -1,0 +1,50 @@
+WikiTree:
+
+I have come to find that a portion of my published research has been stolen by WikiTree users and published on the WikiTree platform, in violation of the Creative Commons license.
+
+For example, the William Mosyer profile ( https://www.wikitree.com/wiki/Mosyer-2 ), created just two days ago, is a direct copy of all my previously published research, available for free but only under the terms of the Creative Commons license ( https://mosher.mine.nu/genealogy/?tree=mosher_other.ftm&person_uuid=c25be286-294d-410b-b393-08f97d39a362 ). It appears as though the WikiTree profile was created shortly after I added a link for my web site to a different WikiTree profile ( https://www.wikitree.com/wiki/Moshier-2 ). The attribution I had added there has also been since removed by other WikiTree users.
+
+Please help me ensure the terms of the Creative Commons license, to which WikiTree is bound, are adhered to. This can be accomplished by simply adding the required attribution notice to all WikiTree pages that use my research, presently or in the future. Otherwise, I will be forced to take legal action requiring WikiTree to TAKE DOWN the offending material.
+
+Thank you for your attention to this matter.
+
+Regards,
+Christopher A. Mosher
+Shelton, Connecticut
+Genealogy Researcher
+
+
+
+
+206.45.165.247 - - [2021-06-12T23:31:50+00:00;1623540710.017] "GET /genealogy/?tree=mosher_other.ftm&person_uuid=53afd4e5-ad0b-40cd-a4f4-0c78743acb8e HTTP/2.0" 200 11038 ; ref="https://www.wikitree.com/wiki/Moshier-2", agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15", xff="-", rt="0.646", uct="0.000", uht="0.644", urt="0.644"
+206.45.165.247 - - [2021-06-12T23:33:25+00:00;1623540805.715] "GET /genealogy/?tree=mosher_other.ftm&person_uuid=85ced023-1780-4645-abc0-e8889c1869be HTTP/2.0" 200 4791 ; ref="https://mosher.mine.nu/genealogy/?tree=mosher_other.ftm&person_uuid=53afd4e5-ad0b-40cd-a4f4-0c78743acb8e", agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15", xff="-", rt="0.380", uct="0.004", uht="0.380", urt="0.384"
+206.45.165.247 - - [2021-06-12T23:33:56+00:00;1623540836.238] "GET /genealogy/?tree=mosher_other.ftm&person_uuid=3d869dc0-ac1c-43a4-98e2-9fdd725ea18c HTTP/2.0" 200 2431 ; ref="https://mosher.mine.nu/genealogy/?tree=mosher_other.ftm&person_uuid=85ced023-1780-4645-abc0-e8889c1869be", agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15", xff="-", rt="0.200", uct="0.000", uht="0.200", urt="0.200"
+206.45.165.247 - - [2021-06-12T23:34:19+00:00;1623540859.388] "GET /genealogy/?tree=mosher_other.ftm&person_uuid=5d44975a-1491-4769-a477-53951d7af5ce HTTP/2.0" 200 22357 ; ref="https://mosher.mine.nu/genealogy/?tree=mosher_other.ftm&person_uuid=53afd4e5-ad0b-40cd-a4f4-0c78743acb8e", agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15", xff="-", rt="1.770", uct="0.000", uht="1.764", urt="1.768"
+206.45.165.247 - - [2021-06-12T23:37:14+00:00;1623541034.534] "GET /genealogy/?tree=mosher_other.ftm&person_uuid=fdc9d48b-8a6b-40b0-a34d-ceb3b4c1405e HTTP/2.0" 200 31065 ; ref="https://mosher.mine.nu/genealogy/?tree=mosher_other.ftm&person_uuid=5d44975a-1491-4769-a477-53951d7af5ce", agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15", xff="-", rt="2.431", uct="0.000", uht="2.432", urt="2.432"
+206.45.165.247 - - [2021-06-12T23:40:16+00:00;1623541216.175] "GET /genealogy/?tree=mosher_other.ftm&person_uuid=99cdc41f-83bc-45eb-a920-661e30416e7c HTTP/2.0" 200 9556 ; ref="https://mosher.mine.nu/genealogy/?tree=mosher_other.ftm&person_uuid=fdc9d48b-8a6b-40b0-a34d-ceb3b4c1405e", agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15", xff="-", rt="0.650", uct="0.000", uht="0.648", urt="0.652"
+206.45.165.247 - - [2021-06-12T23:41:15+00:00;1623541275.504] "GET /genealogy/?tree=mosher_other.ftm&person_uuid=5d44975a-1491-4769-a477-53951d7af5ce HTTP/2.0" 200 22357 ; ref="https://mosher.mine.nu/genealogy/?tree=mosher_other.ftm&person_uuid=fdc9d48b-8a6b-40b0-a34d-ceb3b4c1405e", agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15", xff="-", rt="1.832", uct="0.000", uht="1.828", urt="1.832"
+206.45.165.247 - - [2021-06-12T23:41:47+00:00;1623541307.480] "GET /genealogy/?tree=mosher_other.ftm&person_uuid=53afd4e5-ad0b-40cd-a4f4-0c78743acb8e HTTP/2.0" 200 11038 ; ref="https://mosher.mine.nu/genealogy/?tree=mosher_other.ftm&person_uuid=5d44975a-1491-4769-a477-53951d7af5ce", agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15", xff="-", rt="0.622", uct="0.000", uht="0.620", urt="0.620"
+206.45.165.247 - - [2021-06-12T23:42:57+00:00;1623541377.291] "GET /genealogy/?tree=mosher_other.ftm&person_uuid=3d869dc0-ac1c-43a4-98e2-9fdd725ea18c HTTP/2.0" 200 2431 ; ref="https://mosher.mine.nu/genealogy/?tree=mosher_other.ftm&person_uuid=53afd4e5-ad0b-40cd-a4f4-0c78743acb8e", agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15", xff="-", rt="0.185", uct="0.000", uht="0.180", urt="0.180"
+206.45.165.247 - - [2021-06-12T23:43:05+00:00;1623541385.157] "GET /genealogy/?tree=mosher_other.ftm&person_uuid=85ced023-1780-4645-abc0-e8889c1869be HTTP/2.0" 200 4791 ; ref="https://mosher.mine.nu/genealogy/?tree=mosher_other.ftm&person_uuid=53afd4e5-ad0b-40cd-a4f4-0c78743acb8e", agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.1.1 Safari/605.1.15", xff="-", rt="0.443", uct="0.000", uht="0.440", urt="0.440"
+
+53afd4e5-ad0b-40cd-a4f4-0c78743acb8e Steven Mosier
+85ced023-1780-4645-abc0-e8889c1869be
+
+
+
+https://www.wikitree.com/wiki/Mosyer-1
+https://www.wikitree.com/wiki/Mosyer-2
+https://www.wikitree.com/wiki/Mosyer-3
+https://www.wikitree.com/wiki/Mosyer-5
+https://www.wikitree.com/wiki/Mosyer-6
+https://www.wikitree.com/wiki/Mosyer-7
+https://www.wikitree.com/wiki/Mosyer-8
+https://www.wikitree.com/wiki/Mosyer-9
+https://www.wikitree.com/wiki/Shott-88
+https://www.wikitree.com/wiki/Rhodes-9723
+
+https://www.wikitree.com/wiki/Moger-218
+https://www.wikitree.com/wiki/Moger-219
+https://www.wikitree.com/wiki/Moger-220
+
+https://www.wikitree.com/wiki/Rhodes-9865

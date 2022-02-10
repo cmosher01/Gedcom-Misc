@@ -1,0 +1,116 @@
+<!--
+
+⁄€‹›ﬁﬂ‡°·‚—± ”’» ÚÆ ¯˘¿
+¡™£¢∞§¶•ªº–≠ “‘« …æ ≤≥÷
+_________________________
+
+!@#$%^&*()_+ {}| :" <>?
+1234567890-= []\ ;' ,./
+
+-->
+
+
+TODO Sandys tree:
+
+<!-- <bibl><author>J. S. Brewer, and R. H. Brodie</author>,
+<title level="m">Letters and papers, foreign and domestic, of the reign of Henry VIII, preserved in
+the Public Record Office, the British Museum, and elsewhere, second edition</title>
+(<pubPlace>London</pubPlace>: <publisher>His Majesty's Stationery Office</publisher>, 1920),
+<citedRange>vol. 1, part 1, pp. 67–8, entry no. 78</citedRange>;
+digital images,
+<title level="m">Internet Archive</title>
+(<ref target="https://archive.org/details/letterspapersfor11lond/page/67"/> : accessed 2022-01-30).</bibl> -->
+
+<!-- <bibl><author>John Eustace Prescott</author>,
+<title level="m">The register of the Priory of Wetherhal, edited, with introduction and notes</title>
+(<pubPlace>London</pubPlace>: <publisher>Elliot Stock, Kendal T. Wilson</publisher>, 1897),
+<citedRange>186–193</citedRange>;
+digital images,
+<title level="m">Internet Archive</title>
+(<ref target="https://archive.org/details/cu31924028281883/page/n237"/> : accessed 2022-01-31).</bibl> -->
+
+<!-- <bibl><author>Charles Cawley</author>,
+<title level="a">“Morville”</title>,
+<title level="m">Medieval lands; a prosopography of medieval European noble and royal families</title>
+(<ref target="https://fmg.ac/Projects/MedLands/enguntlo.htm#_Toc64702027"/> : accessed 2022-01-31)
+&gt; British Isles &gt; England, post-conquest &gt; Untitled English nobility &gt; Families L–O &gt; Morville.</bibl> -->
+
+Bray will
+
+
+
+TODO Mosher tree:
+
+<bibl><title level="u">“Turner v Gilbert”, bill and answer, 1624, online database index entry</title>
+(<ref target="https://discovery.nationalarchives.gov.uk/details/r/C5463136"/> : accessed 2022-01-30);
+citing C 8/30/105; National Archives, Kew, Richmond, Surrey, England.</bibl>
+Defendants: ... Tristram Moger; property in Charlton Horethorne manor, Somerset.
+
+<bibl><title level="u">“Lewys v Moger”, pleadings, 1642-60, online database index entry</title>
+(<ref target="https://discovery.nationalarchives.gov.uk/details/r/C3812860"/> : accessed 2022-01-30);
+citing C 3/451/134; National Archives, Kew, Richmond, Surrey, England.</bibl>
+Defendants: Hugh Moger; money matters in Somerset.
+
+<bibl><title level="u">“Talbot v Moger”, bill, 1656, online database index entry</title>
+(<ref target="https://discovery.nationalarchives.gov.uk/details/r/C5666878"/> : accessed 2022-01-30);
+citing C 10/46/188; National Archives, Kew, Richmond, Surrey, England.</bibl>
+personal estate of Hugh Moger, Wincanton, Somerset
+
+<bibl><title level="u">“Talbot v Moger”, depositions taken in the country, 1558-1649, online database index entry</title>
+(<ref target="https://discovery.nationalarchives.gov.uk/details/r/C5499236"/> : accessed 2022-01-30);
+citing C 21/T36/5; National Archives, Kew, Richmond, Surrey, England.</bibl>
+
+<bibl><title level="a">“Bristol Apprenticeship Books Volumes 1(a) to 1(n) 1532-1724”</title>, transcripts and indexes,
+<title level="m">Bristol and Avon Family History Society</title>
+(<ref targetr="https://bafhs.org.uk/product/bristol-apprenticeship-books-volumes-1a-to-1n-1532-1724/"/> : accessed 2022-01-26),
+<citedRange>1613-12-25, Nicholas Moger, son of John of Cucklington, apprenticed to Thomas Hurtnoll, haberdasher</citedRange>;
+citing <title level="m">Bristol Apprenticeship Books</title>, 26 vols., <citedRange>1(d): 75, no. 8</citedRange>; Bristol Archive, Bristol, UK.</bibl>
+
+<bibl><title level="a">“Bristol Apprenticeship Books Volumes 1(a) to 1(n) 1532-1724”</title>, transcripts and indexes,
+<title level="m">Bristol and Avon Family History Society</title>
+(<ref targetr="https://bafhs.org.uk/product/bristol-apprenticeship-books-volumes-1a-to-1n-1532-1724/"/> : accessed 2022-01-26),
+<citedRange>1622-11-20, Joseph Cooke, apprenticed to Nicholas Moger and wife Ann</citedRange>;
+citing <title level="m">Bristol Apprenticeship Books</title>, 26 vols., <citedRange>1(d): 275, no. 8</citedRange>; Bristol Archive, Bristol, UK.</bibl>
+
+other references from Apprenticeship Books
+
+"Hugh Moier" original passenger list image (put into IIP/TEI) hugh_moier.jpeg  http://discovery.nationalarchives.gov.uk/details/r/C3879647
+
+Mary Horndall records from FHL film (IIP/TEI) [also update the monograph]
+
+birth certificates (in winscanner)
+
+Lydia Mosher [Maxson]: https://hdl.handle.net/2027/hvd.32044014800700?urlappend=%3Bseq=565
+
+
+
+TODO mosher_other tree:
+
+<bibl><author>William Brigg</author>,
+<title level="m">The Herts genealogist and antiquary</title>, 3 vols.
+(<pubPlace>Harpenden</pubPlace>: <publisher>William Brigg</publisher>, 1895),
+<citedRange>1: 330, line 18</citedRange>;
+digital images, <title level="m">HathiTrust Digital Library</title>
+(<ref target="https://hdl.handle.net/2027/coo.31924007306180?urlappend=%3Bseq=338"/> : accessed 2022-01-29),
+<citedRange>image 338 of 464</citedRange>.</bibl>
+Subsidy Rolls for Hertfordshire.
+Hundred of Broadwater and the half hundred of Hechine 1545.
+Nunc insipit secundum hundredum de Hechyn.
+Villa de Hechyn.
+John Mosyer iijd.
+
+FIX link:
+<!-- <bibl><title level="u">“Pykeryng v Moyser”, 1536-54, online database index entry</title>
+(<ref target="https://discovery.nationalarchives.gov.uk/details/r/C8100331"/> : accessed 2022-01-30);
+citing E 321/18/81; National Archives, Kew, Richmond, Surrey, England.</bibl>
+Defendant: James Moyser and Others; Subject: Possessions of the late monastery in Byland, Yorkshire -->
+
+Richard Moger (1500-1550): add ref to my transcription
+
+<bibl><title level="u">vintner fine, Henry Mosier, 1570, Hitchin, online database index entry</title>
+(<ref target="https://discovery.nationalarchives.gov.uk/details/r/C3521000"/> : accessed 2022-01-30);
+citing E 176/6/5; National Archives, Kew, Richmond, Surrey, England.</bibl>
+
+John Moger (c1400-): deed 1440-11-15 should be "John Moger and John Avery to Thomas Forneys"
+
+
