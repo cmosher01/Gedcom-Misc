@@ -37,3 +37,6 @@ https://www.familysearch.org/search/catalog/169124
 Henry Sandes
 	https://www.familysearch.org/search/catalog/89915?availability=Family%20History%20Library
 	    marriage records?
+        https://www.familysearch.org/search/catalog/656096?availability=Family%20History%20Library
+	https://www.familysearch.org/search/film/008224480?cat=656096
+	    will? before Nov 1626
