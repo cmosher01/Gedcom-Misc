@@ -1,9 +1,12 @@
 “”
 “   U+201C  open quote
 ”   U+201D  close quote, ditto mark
+
 ‘’
 ‘   U+2018  open single quote
 ’   U+2019  close single quote, apostophe
+
+
 
 ‐   U+2010  unambiguous hyphen: left‐to‐right
 –   U+2013  en dash range of values
@@ -23,3 +26,14 @@ Copyright ©
 degrees °
 half ½
 pound £
+
+
+
+MacBook keyboard (top set is wih option key)
+
+⁄€‹›ﬁﬂ‡°·‚—± ”’» ÚÆ ¯˘¿   <-- shift option
+¡™£¢∞§¶•ªº–≠ “‘« …æ ≤≥÷   <--       option
+__________________________________________
+
+!@#$%^&*()_+ {}| :" <>?   <-- shift
+1234567890-= []\ ;' ,./
