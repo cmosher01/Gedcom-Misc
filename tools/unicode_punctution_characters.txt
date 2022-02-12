@@ -1,0 +1,25 @@
+“”
+“   U+201C  open quote
+”   U+201D  close quote, ditto mark
+‘’
+‘   U+2018  open single quote
+’   U+2019  close single quote, apostophe
+
+‐   U+2010  unambiguous hyphen: left‐to‐right
+–   U+2013  en dash range of values
+—   U+2014  em dash break in the flow of a sentence
+―   U+2015  horizontal bar, for quotation text
+
+‑   U+2011  unambiguous non-breaking hyphen
+‒   U+2012  figure dash as hyphen-minus, but has the same width as digits
+−   U+2212  minus sign (arithmetic)
+
+þ   U+00FE  thorn
+¶   U+00B6  pilcrow sign
+…   U+2026  ellipsis
+
+Copyright ©
+
+degrees °
+half ½
+pound £
