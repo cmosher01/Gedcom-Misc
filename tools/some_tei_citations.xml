@@ -1579,14 +1579,27 @@ digital images and diplomatic transcription,
 (<ref target="https://mosher.mine.nu/tei/genealogy/main/sources/old/mosher/moger_robert_will_1561.tei.xml"/> : 2021-06-15).</bibl>
 
 
+<!--England will (Canterbury), digital image, (cf., EE, 11.60)-->
+<bibl><title level="u"><persName>John Peace</persName> will, <place>Petersfield, Hampshire</place>, <date>1725</date></title>;
+<idno type="TNA">PROB 11/601/71</idno>, <title level="u">“Romney” quire numbers: 1–48</title>;
+<title level="u">Will registers</title>;
+<title level="u">Wills and letters of administration</title>;
+<title level="u">Records of the Prerogative Court of Canterbury</title>;
+The National Archives of the UK, Kew, Richmond, Surrey, England;
+digital images,
+<bibl><title level="a">“Discovery”</title>, <title level="m">The National Archives</title>
+(<ref target="https://discovery.nationalarchives.gov.uk/details/r/D629895"/> : accessed 2015-04-01)</bibl>.</bibl>
 
-From EE, 11.60 (edited):
-John Peace will, Petersfield, Hampshire, 1725;
-IR PROB 11/601/71, Records of the Prerogative Court of Canterbury: Wills and Letters of Administration, The National Archives, Kew, England;
-imaged at “Discovery”, database, The National Archives
-(http://discovery.nationalarchives.gov.uk/details/r/D629895 : accessed 1 April 2015).
 
+<!--
+Citing items in archives:
 
+file name/title, page;
+file id (w/i series), series name;
+series id (w/i collection), collection name;
+collection id (w/i ground), group name/no.;
+archives, location
+-->
 
 <bibl><title level="u">will, Richard Moyger, 1550-03-14</title>;
 PROB 11/33/139;
@@ -1594,29 +1607,33 @@ PROB 11/33/139;
 <title level="m">The National Archives</title>, website
 (<ref target="https://discovery.nationalarchives.gov.uk/details/r/D951931"/> : accessed 2022-02-12);
 The National Archives of the UK, Kew, Richmond, Surrey, England;
+<!-- to cite my transcipts of digital images: -->
 digital images and diplomatic transcription,
-<author>Christopher A. Mosher</author>,
+<bibl/><author>Christopher Alan Mosher</author>,
 <title level="a">“Mosher Documents”</title>,
 <title level="m">Archive of Historical Family Documents</title>
-(<ref target="https://mosher.mine.nu/tei/genealogy/main/sources/old/mosher/moger_richard_will_1549.tei.xml"/> : accessed 2022-02-12).</bibl>
+(<ref target="https://mosher.mine.nu/tei/genealogy/main/sources/old/mosher/moger_richard_will_1549.tei.xml"/> : accessed 2022-02-12)</bibl>.</bibl>
 
 
-
-
-
-
-
-<bibl><title level="u">will, Richard Moyger, 1550-03-14</title>;
-PROB 11/33/139;
-<title level="a">“Discovery”</title>,
-<title level="m">The National Archives</title>, website
-(<ref target="https://discovery.nationalarchives.gov.uk/details/r/D951931"/> : accessed 2022-02-12);
+<!-- including Ancestry citation -->
+<bibl><title level="u"><persName>Richard Moyger</persName> will, <place>Boulogne</place>, <date>1550-03-14</date></title>;
+<idno type="TNA">PROB 11/33/139</idno>, <title level="u">“Coode” register</title>;
+<title level="u">Will registers</title>;
+<title level="u">Wills and letters of administration</title>;
+<title level="u">Records of the Prerogative Court of Canterbury</title>;
 The National Archives of the UK, Kew, Richmond, Surrey, England;
-digital images and diplomatic transcription,
-<author>Christopher A. Mosher</author>,
+database with digital images,
+<bibl><title level="m">Ancestry.com</title>
+(<ref target="https://www.ancestry.com/discoveryui-content/view/915669:5111"/> : accessed 2020-02-13)</bibl>;
+citing,
+<bibl><title level="a">“Discovery”</title>, <title level="m">The National Archives</title>
+(<ref target="https://discovery.nationalarchives.gov.uk/details/r/D951931"/> : accessed 2020-02-13)</bibl>;
+diplomatic transcription,
+<bibl/><author>Christopher Alan Mosher</author>,
 <title level="a">“Mosher Documents”</title>,
 <title level="m">Archive of Historical Family Documents</title>
-(<ref target="https://mosher.mine.nu/tei/genealogy/main/sources/old/mosher/moger_richard_will_1549.tei.xml"/> : accessed 2022-02-12).</bibl>
+(<ref target="https://mosher.mine.nu/tei/genealogy/main/sources/old/mosher/moger_richard_will_1549.tei.xml"/> : accessed 2022-02-13)</bibl>.</bibl>
+
 
 
 
@@ -1900,10 +1917,10 @@ database,
 
 <bibl><author>Article Author</author>,
 <title level="a">“Article title in sentence case”</title>,
-type if not book or document,
+type if not book or document, date if necessary,
 <author>Main Creator</author>,
 <title level="m">Title of book or other main item</title>,
-type if not book or document
+type if not book or document date if necessary,
 (<pubPlace>Where</pubPlace>: <publisher>Who</publisher>, year),
 <citedRange>page number or other locator (description if needed)</citedRange>;
 digital images / citing / etc.,
