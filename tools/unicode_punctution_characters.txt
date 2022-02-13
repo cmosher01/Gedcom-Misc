@@ -23,7 +23,7 @@
 
 Copyright ©
 
-degrees °
+degrees ° minutes ′ seconds ″
 half ½
 pound £
 
