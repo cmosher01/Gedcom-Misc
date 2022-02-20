@@ -8,15 +8,16 @@
 # RECOMMENDED PROCESS
 # Patch FTM to work exclusively with unencrypted files.
 # Use Windows in a VM to update FTM files in the srcdir (define below), a shared directory between Windows and this host
-# Make any changes, then synchoronize with Ancestry.com
+# Make any changes
 # Use Ftm-Fixer to add _ID attributes to (new) people
+# synchoronize with Ancestry.com
 # QUIT THE WINDOWS VM
 # Manually examine the shared directory for foul play (e.g., ransome-ware)
 # Run this script, which first runs a sanity check on the *.ftm files, and aborts if any are corrupt
 # If all *.ftm files are readable, this script make an rsync copy to bakdir (define below), and
 # extracts text SQL files of each tree and copies it to the gitdir (define below)
 
-# MAKE SURE bakdir is not reachable by (shared with) the Windows VM
+# MAKE SURE bakdir is not reachable by (i.e., shared with) the Windows VM
 
 
 
