@@ -1971,6 +1971,28 @@ online catalog,
 <bibl><title level="a">“Discovery”</title>, <title level="m">The National Archives</title>
 (<ref target="https://discovery.nationalarchives.gov.uk/details/r/C3879647"/> : accessed 2022-02-19)</bibl>.</bibl>
 
+<bibl><title level="u">“Register of passengers leaving the port of London for New England and other colonies, and register of licences of persons to pass beyond the seas”</title>,
+<citedRange>vol. 1634-12 to 1635-12, entry for 1635-07-13</citedRange>;
+digital images with diplomatic transcription,
+<bibl><author>Christopher Alan Mosher</author>,
+<title level="a">“Harrison documents”</title>,
+<title level="m">Archive of historical family documents</title>
+(<ref target="https://mosher.mine.nu/tei/genealogy/main/sources/old/harrison/goffe_eliza_1635.tei.xml"/> : accessed 2022-02-27)</bibl>;
+citing database with images, <bibl><title level="a">“Britain, registers of licences to pass beyond the seas 1573-1677”</title>,
+<title level="m">Findmypast</title>
+(<ref target="https://search.findmypast.co.uk/record?id=TNA/E157/020/0100&amp;parentid=TNA/E157/0220085"/> : accessed 2022-02-27),
+database entry, <citedRange>Eliza Goffe, 1635</citedRange></bibl>;
+citing <bibl><idno type="TNA">E 157/20</idno>;
+<title level="u">Registers of licences to pass beyond the seas</title>;
+<title level="u">Records of the King’s Remembrancer</title>;
+<title level="u">Records of the Exchequer</title>;
+The National Archives of the UK, Kew, Richmond, Surrey, England</bibl>;
+online catalog,
+<bibl><title level="a">“Discovery”</title>, <title level="m">The National Archives</title>
+(<ref target="https://discovery.nationalarchives.gov.uk/details/r/C3879651"/> : accessed 2022-02-27)</bibl>.</bibl>
+
+
+
 <bibl><title level="u">“Warren v Collins”, pleadings, online database index entry</title>
 (<ref target="https://discovery.nationalarchives.gov.uk/details/r/C5873457"/> : accessed 2022-02-15);
 citing <idno type="TNA">C 2/ChasI/W92/31</idno>; National Archives, Kew, Richmond, Surrey, England.</bibl>
@@ -2035,6 +2057,22 @@ vol. 8, <title level="a">“Episcopal and congregational”</title>
 digital images, <bibl><title level="m">HathiTrust Digital Library</title>
 (<ref target="https://hdl.handle.net/2027/hvd.32044014800700?urlappend=%3Bseq=565"/> : accessed 2022-02-19),
 <citedRange>image 565 of 698</citedRange></bibl>.</bibl>
+
+
+
+<bibl><author>Nick Alexander</author>,
+<title level="a">“Mr. Henry Sandes of Boxford, Suffolk”</title>,
+posted 2021-06-08,
+in <author>Erica Howton</author>,
+<title level="a">“Henry Sandys, Esq.&#x2014;Have two different Henry Sandys been conflated?”</title>,
+thread started 2015-08-03,
+in <title level="a">“Public genealogy discussions”</title>, <title level="m">Geni</title>
+(<ref target="https://www.geni.com/discussions/148852"/> : accessed 2002-02-20).</bibl>
+
+
+
+
+
 
 
 

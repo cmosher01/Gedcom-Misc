@@ -9,7 +9,6 @@
 # Patch FTM to work exclusively with unencrypted files.
 # Use Windows in a VM to update FTM files in the srcdir (define below), a shared directory between Windows and this host
 # Make any changes
-# Use Ftm-Fixer to add _ID attributes to (new) people
 # synchoronize with Ancestry.com
 # QUIT THE WINDOWS VM
 # Manually examine the shared directory for foul play (e.g., ransome-ware)
@@ -24,6 +23,7 @@
 sqlite3 --version
 dos2unix --version
 rsync --version
+ftm-fixer --version
 
 srcdir=~/SAVE/shared/ftm
 bakdir=~/SAVE/ftm_backup
@@ -58,6 +58,9 @@ mkdir -p $bakdir
 rsync -ltvihPr $srcdir/ $bakdir/
 echo "============================================================="
 
+
+
+ftm-fixer --force $srcdir/*.ftm
 
 
 
