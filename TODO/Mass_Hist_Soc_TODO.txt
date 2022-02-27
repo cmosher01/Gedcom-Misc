@@ -3,21 +3,40 @@ Massachusetts Historical Society
 Boston, MA 02215-3695
 +1-617-536-1608
 https://www.masshist.org/
-
-
-
-
-Search for images or original "Papers of the Winthrop Family, vol. 2"
-John Winthrop to John Winthrop, Jr., letter, 1630-08-14
-
-"mrs. Sandes for a Cowe for her brother Goffe"
-"paye mr. Goffe no more monye"
-
-https://www.masshist.org/publications/winthrop/index.php/view/PWF02d282
-https://www.masshist.org/publications/winthrop/index.php/volume/pwf02
-https://www.masshist.org/publications/winthrop/index.php/about
-https://www.masshist.org/collection-guides/view/fa0294
-
 research reservation system: https://aeon.masshist.org/
 
-permission to publish (on personal web site, for free)?
+Ask about permission to publish (on personal web site, for free)?
+
+
+
+
+
+Search for images of original manuscripts for GOSSE/GOFFE study
+
+John Winthrop to John Winthrop, Jr., letter, 1630-08-14
+https://www.masshist.org/publications/winthrop/index.php/view/PWF02d282
+original from "History of New England", vol. 2, p. 209
+"mrs. Sandes for a Cowe for her brother Goffe" ****************************
+"paye mr. Goffe no more monye"
+https://www.google.com/books/edition/THE_HISTORY_OF_THE_NEW_ENGLAND/KIarrcIX7QAC?hl=en&gbpv=1&dq=%22her%20brother%20goffe%22&pg=PA452&printsec=frontcover&bsq=%22her%20brother%20goffe%22
+
+cf. Thomas Caley to John Winthrop, Jr., letter, 1631-07-05
+https://www.masshist.org/publications/winthrop/index.php/view/PWF03p40
+original from "History of New England", vol. 3, pp. 40-41
+"my Vncle John Gosse"
+https://www.google.com/books/edition/The_Winthrop_Papers/AxLVAAAAMAAJ?hl=en&gbpv=1&dq=%22Vncle%20John%20Gosse%22&pg=PA198&printsec=frontcover&bsq=%22Vncle%20John%20Gosse%22
+
+
+
+
+https://www.masshist.org/collection-guides/view/fa0294
+Winthrop Family Papers, 1537-1990; bulk: 1620-1900; 53 reels of microfilm
+
+specifically: reel 35, vol. 58
+John Winthrop journal: "History of New England," 1630-1649
+Given to the Massachusetts Historical Society by Francis Bayard Winthrop in 1803 (vol. 1-2) and 1816 (vol. 3).
+Gov. John Winthrop's journal describes events in the history of the Massachusetts Bay Colony from the sailing of the Arbella in Mar. 1630 until shortly before Winthrop's death. As the chief source of information on the colony's early history, Winthrop's journal was later used in the writings of historians such as William Hubbard, Cotton Mather, Thomas Prince, and Jeremy Belknap.
+
+(also at LOC: https://lccn.loc.gov/mm78057943 )
+
+https://www.masshist.org/beehiveblog/2020/05/on-this-day-john-winthrops-history-of-new-england/
