@@ -1,7 +1,7 @@
 #!/bin/sh -x
 
 # requires:
-# lyx or libreoffice (depending in input source file)
+# lyx or libreoffice or ConTeXt (depending in input source file)
 # convert (ImageMagick)
 # qpdf
 
@@ -25,6 +25,8 @@ ext="${1##*.}"
 if [ $ext = lyx ] ; then
     # convert lyx to pdf
     lyx -batch -E pdf4 $nam-txt.pdf $nam.lyx
+elif [ $ext = context ] ; then
+    context --result=$nam-txt.pdf $1
 elif [ $ext = fodt -o $ext = odt ] ; then
     # export original ODT source document to (text-based) PDF file
     soffice --headless --convert-to pdf $nam.fodt
