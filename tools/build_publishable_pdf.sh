@@ -10,7 +10,7 @@ if [ -z "$3" ] ; then
     exit 1
 fi
 
-cvt_opts="-density 300 -compress jpeg -quality 35 -sampling-factor 4:2:0 -type TrueColor -interlace plane -define jpeg:dct-method=float -strip"
+cvt_opts="-alpha flatten -density 300 -compress jpeg -quality 35 -sampling-factor 4:2:0 -type TrueColor -interlace plane -define jpeg:dct-method=float -strip"
 encrypt_opts="--verbose --replace-input --encrypt $2 $3 256 --extract=n --assemble=n --annotate=n --form=n --modify-other=n --print=none --"
 show_opts="--password=$2 --check --show-object=trailer --show-pages --with-images"
 
@@ -26,7 +26,7 @@ if [ $ext = lyx ] ; then
     # convert lyx to pdf
     lyx -batch -E pdf4 $nam-txt.pdf $nam.lyx
 elif [ $ext = context ] ; then
-    context --result=$nam-txt.pdf $1
+    context --debug --result=$nam-txt.pdf $1
 elif [ $ext = fodt -o $ext = odt ] ; then
     # export original ODT source document to (text-based) PDF file
     soffice --headless --convert-to pdf $nam.fodt
