@@ -6,8 +6,6 @@
 ‘   U+2018  open single quote
 ’   U+2019  close single quote, apostophe
 
-
-
 ‐   U+2010  unambiguous hyphen: left‐to‐right
 –   U+2013  en dash range of values
 —   U+2014  em dash break in the flow of a sentence
@@ -21,15 +19,17 @@
 ¶   U+00B6  pilcrow sign
 …   U+2026  ellipsis
 
-Copyright ©
+©   U+00A9  Copyright
 
-degrees ° minutes ′ seconds ″
-half ½
-pound £
+°   U+00B0  degrees
+′   U+2032  minutes
+″   U+2033  seconds
+½   U+00BD  half
+£   U+00A3  british pound sterling
 
 
 
-MacBook keyboard (top set is wih option key)
+MacBook keyboard (top set is with option key)
 
 ⁄€‹›ﬁﬂ‡°·‚—± ”’» ÚÆ ¯˘¿   <-- shift option
 ¡™£¢∞§¶•ªº–≠ “‘« …æ ≤≥÷   <--       option
