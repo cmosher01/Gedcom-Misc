@@ -11,8 +11,8 @@
 # fi
 
 cvt_opts="-alpha flatten -density 300 -compress jpeg -quality 35 -sampling-factor 4:2:0 -type TrueColor -interlace plane -define jpeg:dct-method=float -strip"
-encrypt_opts="--verbose --replace-input --linearize   --encrypt $2 $3 256 --extract=n --assemble=n --annotate=n --form=n --modify-other=n --print=none --cleartext-metadata --"
-show_opts="--password=$2 --check --show-object=trailer --show-pages --with-images"
+# encrypt_opts="--verbose --replace-input --linearize   --encrypt $2 $3 256 --extract=n --assemble=n --annotate=n --form=n --modify-other=n --print=none --cleartext-metadata --"
+# show_opts="--password=$2 --check --show-object=trailer --show-pages --with-images"
 
 if [ ! -e "$1" ] ; then
     echo "File not found: $1"
@@ -23,19 +23,30 @@ base="$(basename $1)"
 nam="${base%.*}"
 ext="${base##*.}"
 
-if [ $ext = lyx ] ; then
-    # convert lyx to pdf
-    lyx -batch -E pdf4 $nam-txt.pdf $nam.lyx
-elif [ $ext = context -o $ext = tex ] ; then
+echo "base: $base"
+echo "name: $name"
+echo " ext: $ext"
+
+t=$(mktemp -d)
+cd $t
+
+#nam="${nam%_pdf}"
+
+
+
+# if [ $ext = lyx ] ; then
+#     # convert lyx to pdf
+#     lyx -batch -E pdf4 $nam-txt.pdf $nam.lyx
+# elif [ $ext = context -o $ext = tex ] ; then
     context --debug --result=$nam-txt.pdf $1
-elif [ $ext = fodt -o $ext = odt ] ; then
-    # export original ODT source document to (text-based) PDF file
-    soffice --headless --convert-to pdf $nam.fodt
-    mv $nam.pdf $nam-txt.pdf
-else
-    echo "filetype not supported"
-    exit 1
-fi
+# elif [ $ext = fodt -o $ext = odt ] ; then
+#     # export original ODT source document to (text-based) PDF file
+#     soffice --headless --convert-to pdf $nam.fodt
+#     mv $nam.pdf $nam-txt.pdf
+# else
+#     echo "filetype not supported"
+#     exit 1
+# fi
 
 
 
@@ -51,12 +62,13 @@ cp -v ../$nam.xmp ./
 SecurePdf $nam \
     --keystore=/srv/arc/mosher.mine.nu.p12 \
     --graphic=../../sigstamp.png \
-    --page=2
+    --page=2 \
+    --height=36
 
-sha384sum -b $nam.pdf >$nam.pdf.sha384
-cat $nam.pdf.sha384
-hash_value=$(cat $nam.pdf.sha384 | cut -d\  -f1 | xxd -r -p - | base32 -w 0 -)
-echo "urn:hash:application/pdf:sha384:$hash_value"
+sha384sum -b $nam.pdf >$nam.sha384
+cat $nam.sha384
+hash_value=$(cat $nam.sha384 | cut -d\  -f1 | xxd -r -p - | base32 -w 0 -)
+echo "urn:hash:application/pdf:sha384:$hash_value" >$nam.urn
 
 
 
