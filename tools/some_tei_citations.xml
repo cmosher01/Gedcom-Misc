@@ -1590,6 +1590,23 @@ digital images,
 <bibl><title level="a">“Discovery”</title>, <title level="m">The National Archives</title>
 (<ref target="https://discovery.nationalarchives.gov.uk/details/r/D629895"/> : accessed 2015-04-01)</bibl>.</bibl>
 
+<bibl><title level="u"><persName>William Mosyer</persName> will, <place>London</place>, <date>1614-11-04</date></title>;
+<idno type="TNA">PROB 11/123/346</idno>, <title level="u">“Lawe” quire numbers: 1–66</title>;
+<title level="u">Will registers</title>;
+<title level="u">Wills and letters of administration</title>;
+<title level="u">Records of the Prerogative Court of Canterbury</title>;
+The National Archives of the UK, Kew, Richmond, Surrey, England;
+digital images,
+<bibl><title level="a">“Discovery”</title>, <title level="m">The National Archives</title>
+(<ref target="https://discovery.nationalarchives.gov.uk/details/r/D906295"/> : accessed 2022-05-22)</bibl>;
+digital images and diplomatic transcription,
+<bibl><author>Christopher A. Mosher</author>,
+<title level="u">“Mosher Documents”</title>,
+<title level="m">Archive of Historical Family Documents</title>
+(<ref target="https://mosher.mine.nu/tei/genealogy/main/sources/old/mosher/mosyer_william_will.tei.xml"/> : 2022-05-22).</bibl>
+
+
+
 
 <!--
 Citing items in archives:
@@ -2001,7 +2018,7 @@ citing <idno type="TNA">C 2/ChasI/W92/31</idno>; National Archives, Kew, Richmon
 
 
 
-<bibl><author>Rhode Island Monthly Meeting</author>, 
+<bibl><author>Rhode Island Monthly Meeting</author>,
 <title level="u">“Births of frindes children in Rhode Iland and other places”</title>,
 <citedRange>p. 2, entry for Mary Horndall, 1647-07-06</citedRange>;
 digital images with diplomatic transcription,
