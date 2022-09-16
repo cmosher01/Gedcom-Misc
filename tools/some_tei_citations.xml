@@ -998,10 +998,6 @@ digital images,
 
 
 
-<bibl><author>Mildred Mosher Chamberlain</author>, and <author>Laura McGaffey Clarenbach</author>,
-<title>Descendants of Hugh Mosher and Rebecca Maxson through Seven Generations, Revised Edition</title>
-(<pubPlace>Madison, Wisconsin</pubPlace>: <publisher>Laura McGarrey Clarenbach</publisher>, 1990).</bibl>
-
 
 
 
@@ -1626,7 +1622,7 @@ PROB 11/33/139;
 The National Archives of the UK, Kew, Richmond, Surrey, England;
 <!-- to cite my transcipts of digital images: -->
 digital images and diplomatic transcription,
-<bibl/><author>Christopher Alan Mosher</author>,
+<bibl><author>Christopher Alan Mosher</author>,
 <title level="a">“Mosher Documents”</title>,
 <title level="m">Archive of Historical Family Documents</title>
 (<ref target="https://mosher.mine.nu/tei/genealogy/main/sources/old/mosher/moger_richard_will_1549.tei.xml"/> : accessed 2022-02-12)</bibl>.</bibl>
@@ -1646,10 +1642,20 @@ citing,
 <bibl><title level="a">“Discovery”</title>, <title level="m">The National Archives</title>
 (<ref target="https://discovery.nationalarchives.gov.uk/details/r/D951931"/> : accessed 2020-02-13)</bibl>;
 diplomatic transcription,
-<bibl/><author>Christopher Alan Mosher</author>,
+<bibl><author>Christopher Alan Mosher</author>,
 <title level="a">“Mosher Documents”</title>,
 <title level="m">Archive of Historical Family Documents</title>
 (<ref target="https://mosher.mine.nu/tei/genealogy/main/sources/old/mosher/moger_richard_will_1549.tei.xml"/> : accessed 2022-02-13)</bibl>.</bibl>
+
+
+
+<bibl><author>R. W. Dixon</author>, <title level="j">“Unauthorized arms”</title>, <title level="m">Notes and queries</title>, <citedRange>ser. 5, vol. 2, no. 36 (1874-09-05): 187</citedRange>; digital images, <bibl><title level="m">Oxford University Press > Journals</title> (<ref target="https://doi.org/10.1093/nq/s5-II.36.187a"/> : accessed 2022-06-06), <citedRange>image 187 of 200</citedRange></bibl>.</bibl>
+
+<bibl><author>R. W. Dixon</author>, <title level="j">“Dycsons and Dixons of Furness Fells, Lancashire”</title>, <title level="m">Notes and queries for readers and writers, lollectors and librarians</title>, <citedRange>ser. 2, vol. 8, no. 201 (1859-11-05): 378</citedRange>; digital images, <bibl><title level="m">Oxford University Press > Journals</title> (<ref target="https://doi.org/10.1093/nq/s2-VIII.201.378c"/> : accessed 2022-06-06)</bibl>.</bibl>
+
+<bibl><author>B. Homer Dixon</author>, <title level="m">The border or riding clans followed by a history of the clan Dickson and a brief account of the family of the author</title> (<pubPlace>Albany</pubPlace>: <publisher>Joel Munsell's Sons</publisher>, 1889), <citedRange>133</citedRange>; digital images, <bibl><title level="m">Internet Archive</title> (<ref target="https://archive.org/details/cihm_06042/page/n145/"/> : accessed 2022-06-06), <citedRange>image 146 of 241</citedRange></bibl>.</bibl>
+
+<bibl><author>William Maziere Brady</author>, <title level="m">Clerical and parochial records of Cork, Cloyne, and Ross, taken from diocesan and parish registries, mss. in the principal libraries and public offices of Oxford, Dublin, and London, and from private or family papers</title> (<pubPlace>Dublin</pubPlace>: <publisher>Alexander Thom</publisher>, 1864), <citedRange>3: 47</citedRange>; digital images, <bibl><title level="m">Internet Archive</title> (<ref target="https://archive.org/details/clericalparochia03brad/page/47/"/> : accessed 2022-06-06), <citedRange>image 47 of 370</citedRange></bibl>.</bibl>
 
 
 
@@ -2088,7 +2094,102 @@ in <title level="a">“Public genealogy discussions”</title>, <title level="m"
 
 
 
+<bibl><title>Livery Company membership</title>, database,
+<author>Centre for Metropolitan History, Institute of Historical Research, School of Advanced Study, University of London</author>,
+<title level="m">The records of London’s livery companies online</title>
+(<ref target="https://www.londonroll.org/event/?company=drp&amp;event_id=DRHT4400"/> : accessed 2022-07-28),
+<citedRange>entry for Drapers’ apprenticeship, William Mosyer, co-draper, new freeman via servitude, and Richard Thomson, co-draper, master, 1521</citedRange>.</bibl>
 
+<bibl><title>Livery Company membership</title>, database,
+<author>Centre for Metropolitan History, Institute of Historical Research, School of Advanced Study, University of London</author>,
+<title level="m">The records of London’s livery companies online</title>
+(<ref target="https://www.londonroll.org/event/?company=drp&amp;event_id=DREB4450"/> : accessed 2022-07-28),
+<citedRange>entry for Drapers’ apprenticeship, Wm Mosyer, co-draper, master, and John Brygges, new apprentice, 1541</citedRange>.</bibl>
+
+<bibl><title>Livery Company membership</title>, database,
+<author>Centre for Metropolitan History, Institute of Historical Research, School of Advanced Study, University of London</author>,
+<title level="m">The records of London’s livery companies online</title>
+(<ref target="https://www.londonroll.org/event/?company=drp&amp;event_id=DRLL3741"/> : accessed 2022-07-28),
+<citedRange>entry for Drapers’ apprenticeship, William Mosyer, citizen and draper, master, and Richard Sowche, new apprentice, 1544</citedRange>.</bibl>
+
+<bibl><title>Livery Company membership</title>, database,
+<author>Centre for Metropolitan History, Institute of Historical Research, School of Advanced Study, University of London</author>,
+<title level="m">The records of London’s livery companies online</title>
+(<ref target="https://www.londonroll.org/event/?company=drp&amp;event_id=DRLL2591"/> : accessed 2022-07-28),
+<citedRange>entry for Drapers’ apprenticeship, William Mosyer, citizen and draper, master, and Richard Sowche, new apprentice, 1544</citedRange>.</bibl>
+
+<bibl><title>Livery Company membership</title>, database,
+<author>Centre for Metropolitan History, Institute of Historical Research, School of Advanced Study, University of London</author>,
+<title level="m">The records of London’s livery companies online</title>
+(<ref target="https://www.londonroll.org/event/?company=drp&amp;event_id=DREW8625"/> : accessed 2022-07-28),
+<citedRange>entry for Drapers’ apprenticeship, William Mosyer, co-draper, master, and Richard Huckle, new apprentice, 1545</citedRange>.</bibl>
+
+<bibl><title>Livery Company membership</title>, database,
+<author>Centre for Metropolitan History, Institute of Historical Research, School of Advanced Study, University of London</author>,
+<title level="m">The records of London’s livery companies online</title>
+(<ref target="https://www.londonroll.org/event/?company=drp&amp;event_id=DRHT3739"/> : accessed 2022-07-28),
+<citedRange>entry for Drapers’ apprenticeship, William Moyser, co-draper, master, and Robert Middleton, new apprentice, 1546</citedRange>.</bibl>
+
+<bibl><title>Livery Company membership</title>, database,
+<author>Centre for Metropolitan History, Institute of Historical Research, School of Advanced Study, University of London</author>,
+<title level="m">The records of London’s livery companies online</title>
+(<ref target="https://www.londonroll.org/event/?company=drp&amp;event_id=DRML249"/> : accessed 2022-07-28),
+<citedRange>entry for Drapers’ apprenticeship, William Moyser, co-draper, master, and John Taylor, new apprentice, 1547</citedRange>.</bibl>
+
+<bibl><title>Livery Company membership</title>, database,
+<author>Centre for Metropolitan History, Institute of Historical Research, School of Advanced Study, University of London</author>,
+<title level="m">The records of London’s livery companies online</title>
+(<ref target="https://www.londonroll.org/event/?company=drp&amp;event_id=DREB4451"/> : accessed 2022-07-28),
+<citedRange>entry for Drapers’ apprenticeship, Wm Mosyer, co-draper, master, and John Bryggs, co-draper, new freeman via servitude, 1552-01-16</citedRange>.</bibl>
+
+<bibl><title>Livery Company membership</title>, database,
+<author>Centre for Metropolitan History, Institute of Historical Research, School of Advanced Study, University of London</author>,
+<title level="m">The records of London’s livery companies online</title>
+(<ref target="https://www.londonroll.org/event/?company=drp&amp;event_id=DRLL3742"/> : accessed 2022-07-28),
+<citedRange>entry for Drapers’ apprenticeship, William Mosyer, citizen and draper, master, and Richard Sowche, co-draper, new freeman via servitude, 1552-03-16</citedRange>.</bibl>
+
+<bibl><title>Livery Company membership</title>, database,
+<author>Centre for Metropolitan History, Institute of Historical Research, School of Advanced Study, University of London</author>,
+<title level="m">The records of London’s livery companies online</title>
+(<ref target="https://www.londonroll.org/event/?company=drp&amp;event_id=DRLL2592"/> : accessed 2022-07-28),
+<citedRange>entry for Drapers’ apprenticeship, William Mosyer, citizen and draper, master, and Richard Sowche, co-draper, new freeman via servitude, 1552-03-16</citedRange>.</bibl>
+
+<bibl><title>Livery Company membership</title>, database,
+<author>Centre for Metropolitan History, Institute of Historical Research, School of Advanced Study, University of London</author>,
+<title level="m">The records of London’s livery companies online</title>
+(<ref target="https://www.londonroll.org/event/?company=drp&amp;event_id=DRML250"/> : accessed 2022-07-28),
+<citedRange>entry for Drapers’ apprenticeship, William Moyser, co-draper, master, and John Taylor, new freeman via servitude, 1558</citedRange>.</bibl>
+
+
+
+
+
+
+
+
+<bibl><author>Mildred Mosher Chamberlain</author>, and <author>Laura McGaffey Clarenbach</author>,
+<title level="m">Descendants of Hugh Mosher and Rebecca Maxson through seven generations</title>,
+(<pubPlace>Madison, Wisconsin</pubPlace>: <publisher>Laura McGaffey Clarenbach</publisher>, 1980),
+<citedRange>i–xii, 1–3</citedRange>, note that this is an obsolete edition;
+digital images,
+<bibl><title level="u">“Mosher documents”</title>,
+<author>Christopher A. Mosher</author>,
+<title level="m">Archive of historical family documents</title>
+(<ref target="https://mosher.mine.nu/tei/genealogy/main/sources/old/mosher/descendants_of_hugh_mosher_and_rebecca_maxson_obsolete_ed.tei.xml"/> : 2021-06-06)</bibl>.</bibl>
+
+<bibl><author>Mildred Mosher Chamberlain</author>, and <author>Laura McGaffey Clarenbach</author>,
+<title level="m">Descendants of Hugh Mosher and Rebecca Maxson through seven generations, revised edition</title>
+including loose page inserts: <title level="u">“Errata and addenda”</title>,
+<title level="u">“1990 Mosher book additional corrections”</title>,
+and <title level="u">“The Mogers of Cucklington and Wincanton, Somersetshire, England, based on baptisms,
+marriages, burials, wills, and depositions”</title>
+(<pubPlace>Madison, Wisconsin</pubPlace>: <publisher>Laura McGaffey Clarenbach</publisher>, 1990),
+<citedRange>i–xi, 1–3</citedRange>;
+digital images with typographical corrections,
+<blbl><title level="u">“Mosher documents”</title>,
+<author>Christopher A. Mosher</author>,
+<title level="m">Archive of historical family documents</title>
+(<ref target="https://mosher.mine.nu/tei/genealogy/main/sources/old/mosher/descendants_of_hugh_mosher_and_rebecca_maxson_rev_ed.tei.xml"/> : 2021-05-02)</blbl>.</bibl>
 
 
 
@@ -2100,28 +2201,38 @@ in <title level="a">“Public genealogy discussions”</title>, <title level="m"
 <bibl><author>The Church of Jesus Christ of Latter‐day Saints [LDS]</author>,
 “<title level="a">Family tree</title>”,
 database,
-<title level="m">FamilySearch</title>
-(<ref target="https://www.familysearch.org/tree/person/[FSID]"/> : accessed YYYY-MM-DD).</bibl>
+<bibl><title level="m">FamilySearch</title>
+(<ref target="https://www.familysearch.org/tree/person/[FSID]"/> : accessed YYYY-MM-DD)</bibl>.</bibl>
+
+; digital images, <bibl><title level="m">FamilySearch</title>
+(<ref target="https://www.familysearch.org/ark:/61903/3:1:3Q9M-C9BP-HZG6"/> : accessed 2021-04-08),
+FHL microfilm <idno type="FHL">824,020</idno>, DGS <idno type="DGS">7729967</idno>,
+<citedRange>item 3, images 275–7 of 536</citedRange></bibl>
 
 <bibl><author>Article Author</author>,
 <title level="a">“Article title in sentence case”</title>,
 type if not book or document, date if necessary,
 <author>Main Creator</author>,
 <title level="m">Title of book or other main item</title>,
-type if not book or document date if necessary,
+type if not book or document, date if necessary,
 (<pubPlace>Where</pubPlace>: <publisher>Who</publisher>, year),
 <citedRange>page number or other locator (description if needed)</citedRange>;
 digital images / citing / etc.,
-[author, title, type...]
+<bibl>[author, title, type...]
 (<ref target=""/> : accessed YYYY-MM-DD),
-<citedRange></citedRange>.</bibl>
+<citedRange></citedRange></bibl>.</bibl>
 
 <bibl><author></author>,
 <title level="m"></title>
 (<pubPlace></pubPlace>: <publisher></publisher>, ),
 <citedRange></citedRange>;
-digital images, <title level="m"></title>
-(<ref target=""/> : accessed YYYY-MM-DD).</bibl>
+digital images, <bibl><title level="m"></title>
+(<ref target=""/> : accessed YYYY-MM-DD)</bibl>.</bibl>
+
+<author><persName><forename full="init">E.</forename> <forename full="init">A.</forename> <surname>Webb</surname></persName></author>
+<author>G. W. Miller</author>, and <author>J. Beckwith</author>
+<author><persName><forename>Manuel</forename> <forename>Ignacio</forename> <surname>García Moreno</surname></persName></author>
+
 
 <!--
 CIT := LEV [; type, LEV [...] ].
