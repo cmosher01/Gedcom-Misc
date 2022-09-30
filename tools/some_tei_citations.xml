@@ -2202,32 +2202,26 @@ digital images with typographical corrections,
 “<title level="a">Family tree</title>”,
 database,
 <bibl><title level="m">FamilySearch</title>
-(<ref target="https://www.familysearch.org/tree/person/[FSID]"/> : accessed YYYY-MM-DD)</bibl>.</bibl>
+(<ref target="https://www.familysearch.org/tree/person/[FSID]"/> : accessed <date>YYYY-MM-DD</date>)</bibl>.</bibl>
 
 ; digital images, <bibl><title level="m">FamilySearch</title>
-(<ref target="https://www.familysearch.org/ark:/61903/3:1:3Q9M-C9BP-HZG6"/> : accessed 2021-04-08),
+(<ref target="https://www.familysearch.org/ark:/61903/3:1:3Q9M-C9BP-HZG6"/> : accessed <date>2021-04-08</date>),
 FHL microfilm <idno type="FHL">824,020</idno>, DGS <idno type="DGS">7729967</idno>,
 <citedRange>item 3, images 275–7 of 536</citedRange></bibl>
 
 <bibl><author>Article Author</author>,
 <title level="a">“Article title in sentence case”</title>,
 type if not book or document, date if necessary,
-<author>Main Creator</author>,
+<bibl><author>Main Creator</author>, [compiler or editor,]
 <title level="m">Title of book or other main item</title>,
 type if not book or document, date if necessary,
-(<pubPlace>Where</pubPlace>: <publisher>Who</publisher>, year),
-<citedRange>page number or other locator (description if needed)</citedRange>;
+(<pubPlace>Where</pubPlace>: <publisher>Who</publisher>, <date>year</date>),
+<citedRange>page number or other locator (description if needed)</citedRange></bibl>;
 digital images / citing / etc.,
 <bibl>[author, title, type...]
-(<ref target=""/> : accessed YYYY-MM-DD),
+(<ref target=""/> : accessed <date>YYYY-MM-DD</date>),
 <citedRange></citedRange></bibl>.</bibl>
 
-<bibl><author></author>,
-<title level="m"></title>
-(<pubPlace></pubPlace>: <publisher></publisher>, ),
-<citedRange></citedRange>;
-digital images, <bibl><title level="m"></title>
-(<ref target=""/> : accessed YYYY-MM-DD)</bibl>.</bibl>
 
 <author><persName><forename full="init">E.</forename> <forename full="init">A.</forename> <surname>Webb</surname></persName></author>
 <author>G. W. Miller</author>, and <author>J. Beckwith</author>
