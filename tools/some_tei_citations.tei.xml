@@ -1,3 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI
+    xmlns="http://www.tei-c.org/ns/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.tei-c.org/ns/1.0 ./tei/document.xsd"
+>
+<teiHeader>
+    <fileDesc>
+        <titleStmt>
+            <title>Evidence Explained style source citations in TEI format</title>
+            <author/>
+            <principal>Christopher Alan Mosher</principal>
+        </titleStmt>
+        <publicationStmt>
+            <authority>Christopher Alan Mosher</authority>
+            <pubPlace>Shelton, CT, USA</pubPlace>
+            <date>2018-2022</date>
+            <availability status="restricted">
+                <p>Copyright © 2018-2022, Christopher Alan Mosher, Shelton, Connecticut, USA.</p>
+                <licence target="https://creativecommons.org/licenses/by-sa/4.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</licence>
+            </availability>
+        </publicationStmt>
+        <sourceDesc>
+            <bibl/>
+        </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+        <projectDesc>
+            <p>This file contains example source citations based in Evidence Explained citation style.</p>
+        </projectDesc>
+    </encodingDesc>
+    <profileDesc/>
+</teiHeader>
+
+
+<text xml:lang="en-US">
+<body>
+<listBibl>
+
+
+
+
 <bibl><author>Town of Westerly (Rhode Island, USA)</author>,
 <title level="u">Town Records, Land Evidence, Town of Westerly</title>,
 <citedRange>vol. 1 (1661–1707): stamped spread no. 2, deed, Sosoa to William Vaughan, et. al., 29 Jun 1660</citedRange>;
@@ -502,13 +544,6 @@ digital images, <title level="m">FamilySearch</title>
 <title level="u">Estate no. 3019, Simeon Graham, Dec. 20, 1870 – no. 3070, James Bumpus, Aug. 15, 1871</title>,
 FHL microfilm 425,358, DGS 7330780, images 208–224 of 1413.</bibl>
 
-<bibl><author>Madison County Surrogate’s Court (New York, USA)</author>,
-<title level="u"></title>,
-<citedRange>N: 223–228, will of Angelina Mosher, filed date 27 Mar 1871</citedRange>;
-digital images, <title level="m">FamilySearch</title>
-(https://www.familysearch.org/ark:/61903/3:1:33SQ-GYHT-PMJ : 29 Apr 2018),
-<title level="u">Wills, v. N–O, 1870–3</title>,
-FHL microfilm 408,512, DGS 5113977, images 142–145 of 553.</bibl>
 
 
 
@@ -629,7 +664,7 @@ digital images, <title level="m">FamilySearch</title>
 (<ref target="https://www.familysearch.org/ark:/61903/3:1:3QS7-99WC-Z9B4"/> : 5 Oct 2018),
 <title level="u">Deeds [Steuben County, New York] v. 91–92 1860–2</title>,
 FHL microfilm 513,715 DGS 7137604, image 178 of 503.</bibl>
-2 Apr 1861, 86.16 acres, lot 52, Hornby
+<!--2 Apr 1861, 86.16 acres, lot 52, Hornby-->
 
 <bibl><author>County of Steuben (New York, USA)</author>,
 <title level="u">Land Records</title>,
@@ -638,7 +673,7 @@ digital images, <title level="m">FamilySearch</title>
 (<ref target="https://www.familysearch.org/ark:/61903/3:1:3QS7-99WC-Z9B4"/> : 5 Oct 2018),
 <title level="u">Deeds [Steuben County, New York] v. 91–92 1860–2</title>,
 FHL microfilm 513,715 DGS 7137604, image 178 of 503.</bibl>
-18 Apr 1861, 86.16 acres, lot 52, Hornby
+<!--18 Apr 1861, 86.16 acres, lot 52, Hornby-->
 
 
 
@@ -708,7 +743,6 @@ digital images,
 
 
 
-USA. New York. New York. Evening Post, The.
 
 <bibl><title level="u">Shipping Intelligence</title>,
 <title level="j">The Evening Post</title> (New York, New York, USA),
@@ -719,7 +753,6 @@ digital images,
 
 
 
-USA. New York. New York. Sun, The.
 
 <bibl><title level="u">Marine Intelligence</title>,
 <title level="j">The Sun</title> (New York, New York, USA),
@@ -900,7 +933,6 @@ Dutch Records, Digital Collections, New York State Archives, Albany.</bibl>
 
 
 
-original:
 
 <bibl><title level="u">Deed, Claes van Elsland to Peter Tarragon, 17 Jun 1655, Mespachtes [Maspeth, Queens, New York]</title>;
 digital images,
@@ -911,7 +943,6 @@ Series <biblScope unit="series">A0270</biblScope>,
 <citedRange>box 3, vol. 3, item 132e, NYSA_A0270-78_V3_132e</citedRange>;
 Dutch Records, Digital Collections, New York State Archives, Albany.</bibl>
 
-typescript:
 
 <bibl><author>Arnold Johan Ferdinand VanLaer, transcriber</author>,
 <title level="m">Records of New Netherland, Register of the Provincial Secretary, Volume 3, 1648-1660, Dutch Text</title>, typescript
@@ -1208,8 +1239,8 @@ digital images, <title level="m">Internet Archive</title>
 citing (<pubPlace>London</pubPlace>: <publisher>Her Majesty's Stationery Office</publisher>, 1872).</bibl>
 
 
-Calendar of Close Rolls, Henry IV: Volume 1, 1399-1402. Edited by A E Stamp. London: His Majesty's Stationery Office 1927. British History Online, accessed May 31, 2021, http://www.british-history.ac.uk/cal-close-rolls/hen4/vol1.
-https://www.british-history.ac.uk/cal-close-rolls/hen4/vol1/pp510-515
+<!--Calendar of Close Rolls, Henry IV: Volume 1, 1399-1402. Edited by A E Stamp. London: His Majesty's Stationery Office 1927. British History Online, accessed May 31, 2021, http://www.british-history.ac.uk/cal-close-rolls/hen4/vol1.-->
+<!--https://www.british-history.ac.uk/cal-close-rolls/hen4/vol1/pp510-515-->
 <bibl><author>A. E. Stamp</author>, editor,
 <title level="m">Calendar of Close Rolls, Henry IV: Volume 1, 1399-1402</title>, online transcription,
 <title level="m">British History Online</title>
@@ -1218,7 +1249,7 @@ https://www.british-history.ac.uk/cal-close-rolls/hen4/vol1/pp510-515
 citing (<pubPlace>London</pubPlace>: <publisher>His Majesty's Stationery Office</publisher>, 1927).</bibl>
 
 
-London Bridge: Selected Accounts and Rentals, 1381-1538. Edited by Vanessa Harding and Laura Wright. London: London Record Society 1995. British History Online, accessed May 31, 2021, http://www.british-history.ac.uk/london-record-soc/vol31.
+<!--London Bridge: Selected Accounts and Rentals, 1381-1538. Edited by Vanessa Harding and Laura Wright. London: London Record Society 1995. British History Online, accessed May 31, 2021, http://www.british-history.ac.uk/london-record-soc/vol31.-->
 <bibl><author>Vanessa Harding, and Laura Wright</author>, editors,
 <title level="m">London Bridge: Selected Accounts and Rentals, 1381-1538</title>, online transcription,
 <title level="m">British History Online</title>
@@ -1226,8 +1257,8 @@ London Bridge: Selected Accounts and Rentals, 1381-1538. Edited by Vanessa Hardi
 <citedRange>pp. 53-64, entry 218</citedRange>;
 citing (<pubPlace>London</pubPlace>: <publisher>London Record Society</publisher>, 1995).</bibl>
 
-Letters and Papers, Foreign and Domestic, Henry VIII, Volume 19 Part 2, August-December 1544. Edited by James Gairdner and R H Brodie. London: His Majesty's Stationery Office 1905. British History Online, accessed May 31, 2021, http://www.british-history.ac.uk/letters-papers-hen8/vol19/no2.
-https://www.british-history.ac.uk/letters-papers-hen8/vol19/no2/pp158-197
+<!--Letters and Papers, Foreign and Domestic, Henry VIII, Volume 19 Part 2, August-December 1544. Edited by James Gairdner and R H Brodie. London: His Majesty's Stationery Office 1905. British History Online, accessed May 31, 2021, http://www.british-history.ac.uk/letters-papers-hen8/vol19/no2.-->
+<!--https://www.british-history.ac.uk/letters-papers-hen8/vol19/no2/pp158-197-->
 
 <bibl><author>James Gairdner, and R. H. Brodie</author>, editors,
 <title level="m">Letters and Papers, Foreign and Domestic, Henry VIII, Volume 19 Part 2, August-December 1544</title>, online transcription,
@@ -1237,7 +1268,7 @@ https://www.british-history.ac.uk/letters-papers-hen8/vol19/no2/pp158-197
 citing (<pubPlace>London</pubPlace>: <publisher>His Majesty's Stationery Office</publisher>, 1905).</bibl>
 
 
-Jonathan Mackman and Matthew Stevens. "CP40/757: Easter term 1450," in Court of Common Pleas: the National Archives, Cp40 1399-1500, (London: Centre for Metropolitan History, 2010), British History Online, accessed May 30, 2021, http://www.british-history.ac.uk/no-series/common-pleas/1399-1500/easter-term-1450.
+<!--Jonathan Mackman and Matthew Stevens. "CP40/757: Easter term 1450," in Court of Common Pleas: the National Archives, Cp40 1399-1500, (London: Centre for Metropolitan History, 2010), British History Online, accessed May 30, 2021, http://www.british-history.ac.uk/no-series/common-pleas/1399-1500/easter-term-1450.-->
 
 <bibl><author>Jonathan Mackman, and Matthew Stevens</author>,
 <title type="sub">“CP40/757: Easter term 1450”</title>, in
@@ -1247,7 +1278,7 @@ Jonathan Mackman and Matthew Stevens. "CP40/757: Easter term 1450," in Court of 
 <citedRange>rot. 314</citedRange>;
 citing (<pubPlace>London</pubPlace>: <publisher>Centre for Metropolitan History</publisher>, 2010).</bibl>
 
-Jonathan Mackman and Matthew Stevens. "CP40/874: Michaelmas term 1480," in Court of Common Pleas: the National Archives, Cp40 1399-1500, (London: Centre for Metropolitan History, 2010), British History Online, accessed May 30, 2021, http://www.british-history.ac.uk/no-series/common-pleas/1399-1500/michaelmas-term-1480.
+<!--Jonathan Mackman and Matthew Stevens. "CP40/874: Michaelmas term 1480," in Court of Common Pleas: the National Archives, Cp40 1399-1500, (London: Centre for Metropolitan History, 2010), British History Online, accessed May 30, 2021, http://www.british-history.ac.uk/no-series/common-pleas/1399-1500/michaelmas-term-1480.-->
 
 <bibl><author>Jonathan Mackman, and Matthew Stevens</author>,
 <title type="sub">“CP40/874: Michaelmas term 1480”</title>, in
@@ -1257,7 +1288,7 @@ Jonathan Mackman and Matthew Stevens. "CP40/874: Michaelmas term 1480," in Court
 <citedRange>rot. 562d</citedRange>;
 citing (<pubPlace>London</pubPlace>: <publisher>Centre for Metropolitan History</publisher>, 2010).</bibl>
 
-"1541 London Subsidy roll: Cheap Ward," in Two Tudor Subsidy Rolls for the City of London, 1541 and 1582, ed. R G Lang (London: London Record Society, 1993), 45-49. British History Online, accessed June 1, 2021, http://www.british-history.ac.uk/london-record-soc/vol29/pp45-49.
+<!--"1541 London Subsidy roll: Cheap Ward," in Two Tudor Subsidy Rolls for the City of London, 1541 and 1582, ed. R G Lang (London: London Record Society, 1993), 45-49. British History Online, accessed June 1, 2021, http://www.british-history.ac.uk/london-record-soc/vol29/pp45-49.-->
 <bibl><author>R. G. Lang</author>, editor,
 <title type="sub">“1541 London Subsidy roll: Cheap Ward”</title>, in
 <title level="m">Two Tudor Subsidy Rolls for the City of London, 1541 and 1582</title>, online transcription,
@@ -1454,17 +1485,12 @@ citing C 21/T36/5; National Archives, Kew, Richmond, Surrey, England.</bibl>
 
 
 
-From TNA website https://www.nationalarchives.gov.uk/help-with-your-research/citing-records-national-archives/ :
 
-The National Archives Website: Discovery: PROB 11/4/1 Will of Thomas Aleyn, Leather seller of London, 9 August 1454, Description available at http://discovery.nationalarchives.gov.uk/SearchUI/Details?uri=D968775 (accessed 1 July 2013)
+<bibl><title level="m">The National Archives Website: Discovery: PROB 11/4/1 Will of Thomas Aleyn, Leather seller of London, 1454-08-09</title>
+(<ref target="http://discovery.nationalarchives.gov.uk/SearchUI/Details?uri=D968775"/> : accessed 2013-07-01).</bibl>
 
-The National Archives Website: Discovery: ADM 101/101/1 Medical journal of HMS Formidable, ff 49-52, 1844, Description available at http://discovery.nationalarchives.gov.uk/SearchUI/Details?uri=C4107136 (accessed 24 July 2013)
-
-Adapted to EE:
-
-<bibl><title level="m">The National Archives Website: Discovery: PROB 11/4/1 Will of Thomas Aleyn, Leather seller of London, 1454-08-09</title> (<ref target="http://discovery.nationalarchives.gov.uk/SearchUI/Details?uri=D968775"/> : accessed 2013-07-01).</bibl>
-
-<bibl><title level="m">The National Archives Website: Discovery: ADM 101/101/1 Medical journal of HMS Formidable, 1844</title> (<ref target="http://discovery.nationalarchives.gov.uk/SearchUI/Details?uri=C4107136"/> : accessed 2013-07-24),<citedRange>ff. 49-52</citedRange>.</bibl>
+<bibl><title level="m">The National Archives Website: Discovery: ADM 101/101/1 Medical journal of HMS Formidable, 1844</title>
+(<ref target="http://discovery.nationalarchives.gov.uk/SearchUI/Details?uri=C4107136"/> : accessed 2013-07-24),<citedRange>ff. 49-52</citedRange>.</bibl>
 
 
 
@@ -1490,7 +1516,7 @@ citing E 115/265/9; National Archives, Kew, Richmond, Surrey, England.</bibl>
 citing E 115/265/143; National Archives, Kew, Richmond, Surrey, England.</bibl>
 
 
-<author>Montagu Burrows</author>,
+<bibl><author>Montagu Burrows</author>,
 <title level="m">The family of Brocas of Beaurepaire and Roche Court, hereditary masters of the Royal Buckhounds, with some account of the English rule in Aquitaine</title>
 (<pubPlace>London</pubPlace>: <publisher>Longmans, Green, and Co.</publisher>, 1886),
 <citedRange>80</citedRange>;
@@ -1576,7 +1602,7 @@ digital images and diplomatic transcription,
 
 
 <!--England will (Canterbury), digital image, (cf., EE, 11.60)-->
-<bibl><title level="u"><persName>John Peace</persName> will, <place>Petersfield, Hampshire</place>, <date>1725</date></title>;
+<bibl><title level="u"><persName>John Peace</persName> will, <placeName>Petersfield, Hampshire</placeName>, <date>1725</date></title>;
 <idno type="TNA">PROB 11/601/71</idno>, <title level="u">“Romney” quire numbers: 1–48</title>;
 <title level="u">Will registers</title>;
 <title level="u">Wills and letters of administration</title>;
@@ -1586,7 +1612,7 @@ digital images,
 <bibl><title level="a">“Discovery”</title>, <title level="m">The National Archives</title>
 (<ref target="https://discovery.nationalarchives.gov.uk/details/r/D629895"/> : accessed 2015-04-01)</bibl>.</bibl>
 
-<bibl><title level="u"><persName>William Mosyer</persName> will, <place>London</place>, <date>1614-11-04</date></title>;
+<bibl><title level="u"><persName>William Mosyer</persName> will, <placeName>London</placeName>, <date>1614-11-04</date></title>;
 <idno type="TNA">PROB 11/123/346</idno>, <title level="u">“Lawe” quire numbers: 1–66</title>;
 <title level="u">Will registers</title>;
 <title level="u">Wills and letters of administration</title>;
@@ -1599,7 +1625,7 @@ digital images and diplomatic transcription,
 <bibl><author>Christopher A. Mosher</author>,
 <title level="u">“Mosher Documents”</title>,
 <title level="m">Archive of Historical Family Documents</title>
-(<ref target="https://mosher.mine.nu/tei/genealogy/main/sources/old/mosher/mosyer_william_will.tei.xml"/> : 2022-05-22).</bibl>
+(<ref target="https://mosher.mine.nu/tei/genealogy/main/sources/old/mosher/mosyer_william_will.tei.xml"/> : 2022-05-22)</bibl>.</bibl>
 
 
 
@@ -1629,7 +1655,7 @@ digital images and diplomatic transcription,
 
 
 <!-- including Ancestry citation -->
-<bibl><title level="u"><persName>Richard Moyger</persName> will, <place>Boulogne</place>, <date>1550-03-14</date></title>;
+<bibl><title level="u"><persName>Richard Moyger</persName> will, <placeName>Boulogne</placeName>, <date>1550-03-14</date></title>;
 <idno type="TNA">PROB 11/33/139</idno>, <title level="u">“Coode” register</title>;
 <title level="u">Will registers</title>;
 <title level="u">Wills and letters of administration</title>;
@@ -1649,25 +1675,87 @@ diplomatic transcription,
 
 
 
-<bibl><author>R. W. Dixon</author>, <title level="j">“Unauthorized arms”</title>, <title level="m">Notes and queries</title>, <citedRange>ser. 5, vol. 2, no. 36 (1874-09-05): 187</citedRange>; digital images, <bibl><title level="m">Oxford University Press > Journals</title> (<ref target="https://doi.org/10.1093/nq/s5-II.36.187a"/> : accessed 2022-06-06), <citedRange>image 187 of 200</citedRange></bibl>.</bibl>
+<bibl><author>R. W. Dixon</author>,
+<title level="j">“Unauthorized arms”</title>,
+<title level="m">Notes and queries</title>,
+<citedRange>ser. 5, vol. 2, no. 36 (1874-09-05): 187</citedRange>;
+digital images,
+<bibl><title level="m">Oxford University Press > Journals</title>
+(<ref target="https://doi.org/10.1093/nq/s5-II.36.187a"/> : accessed 2022-06-06),
+<citedRange>image 187 of 200</citedRange></bibl>.</bibl>
 
-<bibl><author>R. W. Dixon</author>, <title level="j">“Dycsons and Dixons of Furness Fells, Lancashire”</title>, <title level="m">Notes and queries for readers and writers, lollectors and librarians</title>, <citedRange>ser. 2, vol. 8, no. 201 (1859-11-05): 378</citedRange>; digital images, <bibl><title level="m">Oxford University Press > Journals</title> (<ref target="https://doi.org/10.1093/nq/s2-VIII.201.378c"/> : accessed 2022-06-06)</bibl>.</bibl>
+<bibl><author>R. W. Dixon</author>,
+<title level="j">“Dycsons and Dixons of Furness Fells, Lancashire”</title>,
+<title level="m">Notes and queries for readers and writers, lollectors and librarians</title>,
+<citedRange>ser. 2, vol. 8, no. 201 (1859-11-05): 378</citedRange>;
+digital images,
+<bibl><title level="m">Oxford University Press > Journals</title>
+(<ref target="https://doi.org/10.1093/nq/s2-VIII.201.378c"/> : accessed 2022-06-06)</bibl>.</bibl>
 
-<bibl><author>B. Homer Dixon</author>, <title level="m">The border or riding clans followed by a history of the clan Dickson and a brief account of the family of the author</title> (<pubPlace>Albany</pubPlace>: <publisher>Joel Munsell's Sons</publisher>, 1889), <citedRange>133</citedRange>; digital images, <bibl><title level="m">Internet Archive</title> (<ref target="https://archive.org/details/cihm_06042/page/n145/"/> : accessed 2022-06-06), <citedRange>image 146 of 241</citedRange></bibl>.</bibl>
+<bibl><author>B. Homer Dixon</author>,
+<title level="m">The border or riding clans followed by a history of the clan Dickson
+and a brief account of the family of the author</title>
+(<pubPlace>Albany</pubPlace>: <publisher>Joel Munsell's Sons</publisher>, 1889),
+<citedRange>133</citedRange>;
+digital images,
+<bibl><title level="m">Internet Archive</title>
+(<ref target="https://archive.org/details/cihm_06042/page/n145/"/> : accessed 2022-06-06),
+<citedRange>image 146 of 241</citedRange></bibl>.</bibl>
 
-<bibl><author>William Maziere Brady</author>, <title level="m">Clerical and parochial records of Cork, Cloyne, and Ross, taken from diocesan and parish registries, mss. in the principal libraries and public offices of Oxford, Dublin, and London, and from private or family papers</title> (<pubPlace>Dublin</pubPlace>: <publisher>Alexander Thom</publisher>, 1864), <citedRange>3: 47</citedRange>; digital images, <bibl><title level="m">Internet Archive</title> (<ref target="https://archive.org/details/clericalparochia03brad/page/47/"/> : accessed 2022-06-06), <citedRange>image 47 of 370</citedRange></bibl>.</bibl>
+<bibl><author>William Maziere Brady</author>,
+<title level="m">Clerical and parochial records of Cork, Cloyne, and Ross,
+taken from diocesan and parish registries, mss. in the principal libraries and
+public offices of Oxford, Dublin, and London, and from private or family papers</title>
+(<pubPlace>Dublin</pubPlace>: <publisher>Alexander Thom</publisher>, 1864),
+<citedRange>3: 47</citedRange>;
+digital images,
+<bibl><title level="m">Internet Archive</title>
+(<ref target="https://archive.org/details/clericalparochia03brad/page/47/"/> : accessed 2022-06-06),
+<citedRange>image 47 of 370</citedRange></bibl>.</bibl>
 
 
 
 
 
-<bibl><author>E. A. Webb, G. W. Miller, and J. Beckwith</author>, <title level="m">The History of Chislehurst, Its Church, Manors, and Parish</title> (<pubPlace>London</pubPlace>: <publisher>George Allen</publisher>, 1899), <citedRange>395, will of John Modyer</citedRange>; digital images, <title level="m">HathiTrust</title> (<ref target="https://hdl.handle.net/2027/uc1.$c218285?urlappend=%3Bseq=553"/> : accessed 2021-05-16), <citedRange>image 553 of 654</citedRange>; citing Archdeaconry of Rochester, Episcopal Consistory Court, will register 5: 397b.</bibl>
+<bibl><author>E. A. Webb, G. W. Miller, and J. Beckwith</author>,
+<title level="m">The History of Chislehurst, Its Church, Manors, and Parish</title>
+(<pubPlace>London</pubPlace>: <publisher>George Allen</publisher>, 1899),
+<citedRange>395, will of John Modyer</citedRange>;
+digital images,
+<title level="m">HathiTrust</title>
+(<ref target="https://hdl.handle.net/2027/uc1.$c218285?urlappend=%3Bseq=553"/> : accessed 2021-05-16),
+<citedRange>image 553 of 654</citedRange>;
+citing Archdeaconry of Rochester, Episcopal Consistory Court, will register 5: 397b.</bibl>
 
-<bibl><author>E. A. Webb, G. W. Miller, and J. Beckwith</author>, <title level="m">The History of Chislehurst, Its Church, Manors, and Parish</title> (<pubPlace>London</pubPlace>: <publisher>George Allen</publisher>, 1899), <citedRange>393, will of Alice Tracy</citedRange>; digital images, <title level="m">HathiTrust</title> (<ref target="https://hdl.handle.net/2027/uc1.$c218285?urlappend=%3Bseq=551"/> : accessed 2021-06-25), <citedRange>image 551 of 654</citedRange>; citing Archdeaconry of Rochester, Episcopal Consistory Court, will register 1: 77a.</bibl>
+<bibl><author>E. A. Webb, G. W. Miller, and J. Beckwith</author>,
+<title level="m">The History of Chislehurst, Its Church, Manors, and Parish</title>
+(<pubPlace>London</pubPlace>: <publisher>George Allen</publisher>, 1899),
+<citedRange>393, will of Alice Tracy</citedRange>;
+digital images,
+<title level="m">HathiTrust</title>
+(<ref target="https://hdl.handle.net/2027/uc1.$c218285?urlappend=%3Bseq=551"/> : accessed 2021-06-25),
+<citedRange>image 551 of 654</citedRange>;
+citing Archdeaconry of Rochester, Episcopal Consistory Court, will register 1: 77a.</bibl>
 
-<bibl><author>E. A. Webb, G. W. Miller, and J. Beckwith</author>, <title level="m">The History of Chislehurst, Its Church, Manors, and Parish</title> (<pubPlace>London</pubPlace>: <publisher>George Allen</publisher>, 1899), <citedRange>398, will of John Note</citedRange>; digital images, <title level="m">HathiTrust</title> (<ref target="https://hdl.handle.net/2027/uc1.$c218285?urlappend=%3Bseq=556"/> : accessed 2021-06-25), <citedRange>image 556 of 654</citedRange>; citing Archdeaconry of Rochester, Episcopal Consistory Court, will register 6: 142b.</bibl>
+<bibl><author>E. A. Webb, G. W. Miller, and J. Beckwith</author>,
+<title level="m">The History of Chislehurst, Its Church, Manors, and Parish</title>
+(<pubPlace>London</pubPlace>: <publisher>George Allen</publisher>, 1899),
+<citedRange>398, will of John Note</citedRange>;
+digital images,
+<title level="m">HathiTrust</title>
+(<ref target="https://hdl.handle.net/2027/uc1.$c218285?urlappend=%3Bseq=556"/> : accessed 2021-06-25),
+<citedRange>image 556 of 654</citedRange>;
+citing Archdeaconry of Rochester, Episcopal Consistory Court, will register 6: 142b.</bibl>
 
-<bibl><author>E. A. Webb, G. W. Miller, and J. Beckwith</author>, <title level="m">The History of Chislehurst, Its Church, Manors, and Parish</title> (<pubPlace>London</pubPlace>: <publisher>George Allen</publisher>, 1899), <citedRange>398, will of Thomas Brokeman</citedRange>; digital images, <title level="m">HathiTrust</title> (<ref target="https://hdl.handle.net/2027/uc1.$c218285?urlappend=%3Bseq=556"/> : accessed 2021-06-25), <citedRange>image 556 of 654</citedRange>; citing Archdeaconry of Rochester, Episcopal Consistory Court, will register 6: 153b.</bibl>
+<bibl><author>E. A. Webb, G. W. Miller, and J. Beckwith</author>,
+<title level="m">The History of Chislehurst, Its Church, Manors, and Parish</title>
+(<pubPlace>London</pubPlace>: <publisher>George Allen</publisher>, 1899),
+<citedRange>398, will of Thomas Brokeman</citedRange>;
+digital images,
+<title level="m">HathiTrust</title>
+(<ref target="https://hdl.handle.net/2027/uc1.$c218285?urlappend=%3Bseq=556"/> : accessed 2021-06-25),
+<citedRange>image 556 of 654</citedRange>;
+citing Archdeaconry of Rochester, Episcopal Consistory Court, will register 6: 153b.</bibl>
 
 
 
@@ -1773,7 +1861,8 @@ digital images, <title level="m">HathiTrust</title>
 <citedRange>1: 84</citedRange>;
 digital images, <title level="m">HathiTrust</title>
 (<ref target="https://hdl.handle.net/2027/gri.ark:/13960/t0gt94j52?urlappend=%3Bseq=118"/> : accessed 2021-07-09).</bibl>
-Lay Subsidies, London. Indentures 4 April 35 Hen. VIII [1544]. Aldrychegate Warde. Saynt Anne and Agnes. Straungers. John Moger. iiij d. ij d.
+
+    <!--Lay Subsidies, London. Indentures 4 April 35 Hen. VIII [1544]. Aldrychegate Warde. Saynt Anne and Agnes. Straungers. John Moger. iiij d. ij d.-->
 
 <bibl><author>R. E. G. Kirk, Ernest F. Kirk</author>, editors,
 <title level="m">Returns of Aliens Dwelling in the City and Suburbs of London From the Reign of Henry VIII to That of James I</title>, 4 vols.
@@ -1807,9 +1896,9 @@ ff. 165v, 171v, 176v, 192v; ibid. 1625-31, ff. 21v, 43v, 77v, 240; Renter Warden
 
 
 
-Keene, D J and Vanessa Harding. Historical Gazetteer of London Before the Great Fire Cheapside; Parishes of All Hallows Honey Lane, St Martin Pomary, St Mary Le Bow, St Mary Colechurch and St Pancras Soper Lane. London: Centre for Metropolitan History 1987. British History Online, accessed May 15, 2021, http://www.british-history.ac.uk/no-series/london-gazetteer-pre-fire.
+<!--Keene, D J and Vanessa Harding. Historical Gazetteer of London Before the Great Fire Cheapside; Parishes of All Hallows Honey Lane, St Martin Pomary, St Mary Le Bow, St Mary Colechurch and St Pancras Soper Lane. London: Centre for Metropolitan History 1987. British History Online, accessed May 15, 2021, http://www.british-history.ac.uk/no-series/london-gazetteer-pre-fire.-->
 
-Harding, Vanessa., Keene, Derek. Historical Gazetteer of London Before the Great Fire: Cheapside. United Kingdom: Centre for Metropolitan History, 2003.
+<!--Harding, Vanessa., Keene, Derek. Historical Gazetteer of London Before the Great Fire: Cheapside. United Kingdom: Centre for Metropolitan History, 2003.-->
 
 
 <bibl><author>George W. Daniels</author>,
@@ -1935,12 +2024,12 @@ citing <idno type="TNA">C 8/30/105</idno>; National Archives, Kew, Richmond, Sur
 <bibl><title level="u">“Lewys v Moger”, pleadings, 1642-60, online database index entry</title>
 (<ref target="https://discovery.nationalarchives.gov.uk/details/r/C3812860"/> : accessed 2022-01-30);
 citing <idno type="TNA">C 3/451/134</idno>; National Archives, Kew, Richmond, Surrey, England.</bibl>
-Defendants: Hugh Moger; money matters in Somerset.
+<!--Defendants: Hugh Moger; money matters in Somerset.-->
 
 <bibl><title level="u">“Talbot v Moger”, bill, 1656, online database index entry</title>
 (<ref target="https://discovery.nationalarchives.gov.uk/details/r/C5666878"/> : accessed 2022-01-30);
 citing <idno type="TNA">C 10/46/188</idno>; National Archives, Kew, Richmond, Surrey, England.</bibl>
-personal estate of Hugh Moger, Wincanton, Somerset.
+<!--personal estate of Hugh Moger, Wincanton, Somerset.-->
 
 <bibl><title level="u">“Talbot v Moger”, depositions taken in the country, 1558-1649, online database index entry</title>
 (<ref target="https://discovery.nationalarchives.gov.uk/details/r/C5499236"/> : accessed 2022-01-30);
@@ -2186,10 +2275,10 @@ marriages, burials, wills, and depositions”</title>
 (<pubPlace>Madison, Wisconsin</pubPlace>: <publisher>Laura McGaffey Clarenbach</publisher>, 1990),
 <citedRange>i–xi, 1–3</citedRange>;
 digital images with typographical corrections,
-<blbl><title level="u">“Mosher documents”</title>,
+<bibl><title level="u">“Mosher documents”</title>,
 <author>Christopher A. Mosher</author>,
 <title level="m">Archive of historical family documents</title>
-(<ref target="https://mosher.mine.nu/tei/genealogy/main/sources/old/mosher/descendants_of_hugh_mosher_and_rebecca_maxson_rev_ed.tei.xml"/> : 2021-05-02)</blbl>.</bibl>
+(<ref target="https://mosher.mine.nu/tei/genealogy/main/sources/old/mosher/descendants_of_hugh_mosher_and_rebecca_maxson_rev_ed.tei.xml"/> : 2021-05-02)</bibl>.</bibl>
 
 
 
@@ -2199,15 +2288,16 @@ digital images with typographical corrections,
 
 
 <bibl><author>The Church of Jesus Christ of Latter‐day Saints [LDS]</author>,
-“<title level="a">Family tree</title>”,
+<title level="a">“Family tree”</title>,
 database,
 <bibl><title level="m">FamilySearch</title>
-(<ref target="https://www.familysearch.org/tree/person/[FSID]"/> : accessed <date>YYYY-MM-DD</date>)</bibl>.</bibl>
+(<ref target="https://www.familysearch.org/tree/person/FSID"/> : accessed <date>YYYY-MM-DD</date>)</bibl>.</bibl>
 
+<bibl>...
 ; digital images, <bibl><title level="m">FamilySearch</title>
 (<ref target="https://www.familysearch.org/ark:/61903/3:1:3Q9M-C9BP-HZG6"/> : accessed <date>2021-04-08</date>),
 FHL microfilm <idno type="FHL">824,020</idno>, DGS <idno type="DGS">7729967</idno>,
-<citedRange>item 3, images 275–7 of 536</citedRange></bibl>
+<citedRange>item 3, images 275–7 of 536</citedRange></bibl>.</bibl>
 
 <bibl><author>Article Author</author>,
 <title level="a">“Article title in sentence case”</title>,
@@ -2219,14 +2309,14 @@ type if not book or document, date if necessary,
 <citedRange>page number or other locator (description if needed)</citedRange></bibl>;
 digital images / citing / etc.,
 <bibl>[author, title, type...]
-(<ref target=""/> : accessed <date>YYYY-MM-DD</date>),
-<citedRange></citedRange></bibl>.</bibl>
+(<ref target="."/> : accessed <date>YYYY-MM-DD</date>),
+<citedRange>i</citedRange></bibl>.</bibl>
 
-
+<bibl>
 <author><persName><forename full="init">E.</forename> <forename full="init">A.</forename> <surname>Webb</surname></persName></author>
 <author>G. W. Miller</author>, and <author>J. Beckwith</author>
 <author><persName><forename>Manuel</forename> <forename>Ignacio</forename> <surname>García Moreno</surname></persName></author>
-
+</bibl>
 
 <!--
 CIT := LEV [; type, LEV [...] ].
@@ -2235,3 +2325,9 @@ ATT := CSV( [author] [title] [type] )
 PUB := place: publisher, year
 PUB := ref : accessed date
 -->
+
+
+</listBibl>
+</body>
+</text>
+</TEI>
