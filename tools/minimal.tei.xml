@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI
+  xmlns="http://www.tei-c.org/ns/1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://mosher.mine.nu/xml/xsd/tei/simple_sources/simple_sources.xsd"
+>
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+      </titleStmt>
+      <publicationStmt>
+        <p/>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl/>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div/>
+    </body>
+  </text>
+</TEI>
