@@ -10,7 +10,7 @@
         <title/>
       </titleStmt>
       <publicationStmt>
-        <p/>
+        <ab/>
       </publicationStmt>
       <sourceDesc>
         <bibl/>
@@ -19,7 +19,7 @@
   </teiHeader>
   <text>
     <body>
-      <div/>
+      <ab/>
     </body>
   </text>
 </TEI>

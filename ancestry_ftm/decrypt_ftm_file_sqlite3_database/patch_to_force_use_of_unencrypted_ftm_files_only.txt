@@ -14,13 +14,13 @@ Use https://hexed.it/
 
 
 FTM.Data.NextDB:NextDbUtilHelper class, GetE method
-(change one byte at offset B0FE):
+(change one byte at offset B0FE):   In version 24.1.0.1520, the offset is B4D2:
 from:
         /* 0x0000B0FE 3107         */ IL_0002: ble.s     IL_000B
 to:
         /* 0x0000B0FE 3007         */ IL_0002: bgt.s     IL_000B
 
-
+[For future decompiling, use ILSpy: https://github.com/icsharpcode/ILSpy/releases]
 
 Then "Export" (to Downloads folder), and copy the file over top of
 C:\Program Files\Family Tree Maker 2019\FTM.Data.NextDB.dll

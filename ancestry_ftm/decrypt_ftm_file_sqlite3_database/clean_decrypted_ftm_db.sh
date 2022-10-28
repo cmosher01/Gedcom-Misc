@@ -13,17 +13,18 @@
 
 sqlite3 --version
 
-srcdir=~/dev/local/wingeneal/shared/FTM_DOCUMENTS
+#srcdir=~/dev/local/wingeneal/shared/FTM_DOCUMENTS
+srcdir=/srv/arc/virtual_media/windows/shared/ftm/
 
 offset=21
 patch=@
 
 cd $srcdir
 for db in *.ftm ; do
-    existing="`dd if="$db" bs=1 skip=$offset count=1`"
+    existing="$(dd if="$db" bs=1 skip=$offset count=1)"
     if [ "$patch" != "$existing" ] ; then
         echo "patching from '$existing' to '$patch'"
-        printf "$patch" | dd bs=1 seek=$offset conv=notrunc of="$db"
+        printf "%c" "$patch" | dd bs=1 seek=$offset conv=notrunc of="$db"
     else
         echo "no patch required: '$existing' = '$patch'"
     fi
