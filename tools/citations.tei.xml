@@ -26,7 +26,7 @@
     </fileDesc>
     <encodingDesc>
         <projectDesc>
-            <p>This file contains example source citations based in Evidence Explained citation style.</p>
+            <p>This file contains example source citations based on Evidence Explained citation style.</p>
         </projectDesc>
     </encodingDesc>
     <profileDesc/>
@@ -2280,11 +2280,22 @@ digital images with typographical corrections,
 <title level="m">Archive of historical family documents</title>
 (<ref target="https://mosher.mine.nu/tei/genealogy/main/sources/old/mosher/descendants_of_hugh_mosher_and_rebecca_maxson_rev_ed.tei.xml"/> : 2021-05-02)</bibl>.</bibl>
 
-
+<bibl><author>Frederick W. Ragg</author>,
+<title level="a">“Shap and Rosgill and some of the early owners”</title>,
+<bibl><author>William Gershom Collingwood</author>, editor,
+<title level="m">Transactions of the Cumberland and Westmorland Antiquarian and Archæological Society (founded 1866)</title>
+(<pubPlace>Kendal</pubPlace>: <publisher>Titus Wilson</publisher>, <date>1914</date>),
+<citedRange>new series, vol. 14, facing p. 62</citedRange></bibl>;
+digital images,
+<bibl><title level="m">Internet Archive</title>
+(<ref target="https://archive.org/details/transactionsofcu14cumb/page/n74/mode/1up"/> : accessed 2023-07-23)
+</bibl>
+</bibl>
 
 
 
 <!-- ============================================================================ -->
+
 
 
 <bibl><author>The Church of Jesus Christ of Latter‐day Saints [LDS]</author>,
