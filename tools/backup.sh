@@ -30,7 +30,7 @@ ftm-fixer --version
 srcdir=/srv/arc/virtual_media/windows/shared/ftm
 bakdir=/srv/arc/linode/backup/ftm
 dstdir=/srv/arc/linode/ftm
-gitdir=~/dev/github_cmosher01/family-tree-maker-data
+gitdir=/srv/arc/dev/github_cmosher01/family-tree-maker-data
 
 
 
