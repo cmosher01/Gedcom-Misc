@@ -1,20 +1,14 @@
-nypl TODO:
-
-(NOTE: I have personal lists on-line at NYPL website)
+nypl TODO (NOTE: I have personal lists on-line at NYPL website)
 
 
-Name:	Lydia Maxon
-[Lydia Maxson]
-Arrival Year:	1650
-Arrival Place:	Providence, Rhode Island
-Primary Immigrant:	Maxon, Lydia
-Source Publication Code:	8395
-Annotation:	Date and port of arrival or date and place of first mention of residence in the New World. In some cases, the name of the ship and spousal information is also provided.
-Source Bibliography:	SHERMAN, JOHN H. "'Second Boat' Ancestors." In The Second Boat (Pentref Press, Machias, ME), vol. 4:2 (Aug. 1983), pp. 49-55.
 
-
-Sands family research by Malcolm Sands Wilson:
-https://archives.nypl.org/mss/18234
+Lydia Maxson
+	Arrival Year:	1650
+	Arrival Place:	Providence, Rhode Island
+	Primary Immigrant:	Maxon, Lydia
+	Source Publication Code:	8395
+	Annotation:	Date and port of arrival or date and place of first mention of residence in the New World. In some cases, the name of the ship and spousal information is also provided.
+	Source Bibliography: SHERMAN, JOHN H. "'Second Boat' Ancestors." In The Second Boat (Pentref Press, Machias, ME), vol. 4:2 (Aug. 1983), pp. 49-55.
 
 
 
@@ -22,3 +16,29 @@ Hugh Mosher
 	Albany daily advertiser microfilm *ZY 86-147 June 21, 1833-Sept 30, 1836
 	[June 21, 1833 followed immediately by April 1, 1836]
 	check for second article, in 12 Apr 1836 issue
+
+
+
+Sands family research by Malcolm Sands Wilson:
+https://archives.nypl.org/mss/18234
+
+
+
+Harry Hamilton Disosway
+	Little but loud
+		v1: not reserved TODO
+		v2: not reserved TODO
+		v3: photographed
+
+
+
+
+2023-10-23:
+
+"Second boat" 4:2 (Aug 83) 49-55
+Lydia Maxson
+pictures of cover, Reader's List heading, "MAXON, LYDIA" page
+
+Beauchamp: The origins of some Anglo-Norman families, 20-1
+pictures of title page, etc.
+

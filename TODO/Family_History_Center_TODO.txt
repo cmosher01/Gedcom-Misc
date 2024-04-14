@@ -1,17 +1,31 @@
 Family History Center TODO
 
-[see NYPL trip for 3 more]
+
+John Horndall death:
+    https://www.familysearch.org/search/catalog/191061
+        "Monthly Meeting records, 1638-1899"
+    https://www.familysearch.org/search/film/007856731:
+        Denials, 1718-1827
+        Manumissions, 1773-1798
+        Removals, 1787-1899
+        Deaths, 1647-1875
+    1687-02-06
+
+Charles Pettit
+    May 1841:
+    https://www.ancestry.com/discoveryui-content/view/147804:8920?_phsrc=ZPe7998&_phstart=successSource&gsfn=charles&gsln=pettit&ml_rpos=1&queryId=50a721819e668a97f38543ab0ab0724c
+    "This morning Battery Hotel, Charles Pettet 42y"
+    [I already checked here: *ZY (Evening post, for the country. New York) Jul 16, 1839-May 6, 1843; Aug 14, 1849 https://www.nypl.org/research/research-catalog/bib/b12639127]
+    film is missing may 1841
+    https://www.familysearch.org/search/catalog/537374?availability=Family%20History%20Library (Coroner's inquisitions)???
+
+Mosher deed:
+    Providence Deeds 7:102 (1724) Mosher descendants to James Brawman
+
 
 Marc du Sauchoy:
 https://www.familysearch.org/search/catalog/120669
 https://www.familysearch.org/search/catalog/265796
-
-
-Nicholas Moger (apprenticeship):
-https://www.familysearch.org/search/catalog/582510
-    https://www.familysearch.org/search/film/008068257
-
-
 
 
 
@@ -19,46 +33,27 @@ Block Island Town Records (Not available online)
 https://www.familysearch.org/search/catalog/1231048?availability=Family%20History%20Library
 
 
-A Catalogue of the heirs of Hugh Mosher
-	https://www.familysearch.org/search/catalog/337826
-	FHL microfilm 940,244, item 3, DSG 8201871
-
-
-
-https://www.familysearch.org/search/catalog/169124
-	Name:	William Mosyar
-	Gender:	Male
-	Baptism Date:	27 Feb 1581
-	Baptism Place:	Chiselhurst, Kent, England
-	FHL Film Number:	1042459
 
 Henry Sandes
-	https://www.familysearch.org/search/catalog/89915?availability=Family%20History%20Library
-	    marriage records?
+    https://www.familysearch.org/search/catalog/89915?availability=Family%20History%20Library
+        marriage records?
         https://www.familysearch.org/search/catalog/656096?availability=Family%20History%20Library
-	https://www.familysearch.org/search/catalog/348499?availability=Family%20History%20Library
-	https://www.familysearch.org/search/film/008224480?cat=656096
-	    will? before Nov 1626
+    https://www.familysearch.org/search/catalog/348499?availability=Family%20History%20Library
+    https://www.familysearch.org/search/film/008224480?cat=656096
+        will? before Nov 1626
 
 
-
-John Harndell will:
-    signed: 1685-02-09
-    proved: 1698-04-08
-    Newport Town Council, 5:131-2
-    I previously searched in here and it didn't seem like the right place for will records: https://www.familysearch.org/search/catalog/67030
-    Need to try this one: https://www.familysearch.org/search/catalog/67539 (check "Index of wills" film)
 
 Thomas "Moser"
 son of John, baptism 13 Dec (year unknown):
 https://www.familysearch.org/ark:/61903/1:1:FWMT-8BW
 https://www.familysearch.org/search/catalog/604700
-https://www.familysearch.org/search/film/004018366?cat=604700
+https://www.familysearch.org/search/film/004018366?cat=604700 (LOCKED even at Manhattan FamilySearch Center, but see DGS 8099239)
 Who is this Thomas?
 And possibly same Thomas as:
-	https://www.ancestry.com/discoveryui-content/view/610790:1624
-	https://www.ancestry.com/discoveryui-content/view/137627:1624
-	https://www.ancestry.com/discoveryui-content/view/137441:1624
-	https://www.ancestry.com/discoveryui-content/view/9924574:1624
-	https://www.ancestry.com/discoveryui-content/view/9838370:1624
+    https://www.ancestry.com/discoveryui-content/view/610790:1624
+    https://www.ancestry.com/discoveryui-content/view/137627:1624
+    https://www.ancestry.com/discoveryui-content/view/137441:1624
+    https://www.ancestry.com/discoveryui-content/view/9924574:1624
+    https://www.ancestry.com/discoveryui-content/view/9838370:1624
 I already did some work here: https://www.familysearch.org/tree/person/details/MMVF-4WW

@@ -28,6 +28,8 @@
 £   U+00A3  british pound sterling
 
 
+XML: &#xNNNN;
+
 
 MacBook keyboard (top set is with option key)
 

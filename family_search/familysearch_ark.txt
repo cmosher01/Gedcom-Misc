@@ -1,0 +1,24 @@
+FamilySearch ARKs
+-----------------
+
+https://www.familysearch.org/
+ark:/61903/{type}:{subtype}:{ID}
+
+type: sub-type:
+1: 1: index entry for single person on a record
+   2: (redirect to different 1:1)
+2: 1: index entry for single person in IGI, Ancestral File
+      https://www.familysearch.org/ark:/61903/2:1:MLMY-94D
+   2: index entry for single person in pedigree resource file, community trees, oral gen, guild 1-name, mytrees, storied, mideast
+      https://www.familysearch.org/ark:/61903/2:2:7H8Q-F9M
+   3: American Ancestors, rootsfinder
+      https://www.familysearch.org/ark:/61903/2:3:M9H1-9K1
+   4: -
+   5: computer generated trees
+      https://www.familysearch.org/ark:/61903/2:5:7FKD-BH6
+3: 1: image of single microfilm frame (page)
+      https://www.familysearch.org/ark:/61903/3:1:3Q9M-C9YT-98S7
+   2: (same?)
+      https://www.familysearch.org/ark:/61903/3:2:77TD-8M9
+4: 1: Family Tree person profile
+	  https://www.familysearch.org/ark:/61903/4:1:9HXD-GSG

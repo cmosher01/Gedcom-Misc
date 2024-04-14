@@ -62,6 +62,24 @@ FHL microfilm 940,222, DGS 7896694, item 4, image 395 of 911.</bibl>
 <citedRange>3: 78–83, Sarah Mosher, probate records, 4 Jun 1716</citedRange>;
 digital images, FHL microfilm 944,997, DGS 7649102, item 3, images 302–4 of 415.</bibl>
 
+
+
+
+<bibl><author>Town of Newport (Rhode Island, USA)</author>,
+<title level="u">Town council records</title>,
+<citedRange>5: 131–2, probate records, John Horndall, recorded 1721-07-19</citedRange>;
+digital images,
+<bibl><title level="m">FamilySearch</title>
+(<ref target="https://www.familysearch.org/ark:/61903/3:1:3Q9M-C9PY-697V-6"/> : accessed 2023-10-01),
+<title level="u">Town council records, volumes 4–7, 1714–1735</title>,
+FHL microfilm 944,998, DGS 7649103, images 571–2 of 1263</bibl>;
+digital images and diplomatic transcription,
+<bibl><author>Christopher Alan Mosher</author>,
+<title level="a">“Mosher Documents”</title>,
+<title level="m">Archive of Historical Family Documents</title>
+(<ref target="https://mosher.mine.nu/tei/genealogy/main/sources/old/mosher/horndall_john_probate.tei.xml"/> : accessed 2024-01-08)</bibl>.</bibl>
+
+
 <bibl><author>Town of Portsmouth (Rhode Island, USA)</author>,
 <title level="u">Portsmouth Records, Portsmouth, Rhode Island</title>,
 <citedRange>vol. 1 (1638–1700): 337</citedRange>;
@@ -2302,22 +2320,22 @@ digital images,
 <title level="a">“Family tree”</title>,
 database,
 <bibl><title level="m">FamilySearch</title>
-(<ref target="https://www.familysearch.org/tree/person/FSID"/> : accessed <date>YYYY-MM-DD</date>)</bibl>.</bibl>
+(<ref target="https://www.familysearch.org/ark:/61903/4:1:{FSID}"/> : accessed <date>YYYY-MM-DD</date>)</bibl>.</bibl>
 
 <bibl>...
 ; digital images, <bibl><title level="m">FamilySearch</title>
-(<ref target="https://www.familysearch.org/ark:/61903/3:1:3Q9M-C9BP-HZG6"/> : accessed <date>2021-04-08</date>),
-FHL microfilm <idno type="FHL">824,020</idno>, DGS <idno type="DGS">7729967</idno>,
-<citedRange>item 3, images 275–7 of 536</citedRange></bibl>.</bibl>
+(<ref target="https://www.familysearch.org/ark:/61903/3:1:{ID}"/> : accessed <date>2021-04-08</date>),
+FHL microfilm <idno type="FHL">824,020</idno> item 3, DGS <idno type="DGS">7729967</idno>,
+<citedRange>images 275&#x2013;7 of 536</citedRange></bibl>.</bibl>
 
 <bibl><author>Article Author</author>,
-<title level="a">“Article title in sentence case”</title>,
+<title level="a">&#x201C;Article title in sentence case&#x201D;</title>,
 type if not book or document, date if necessary,
 <bibl><author>Main Creator</author>, [compiler or editor,]
 <title level="m">Title of book or other main item</title>,
 type if not book or document, date if necessary,
 (<pubPlace>Where</pubPlace>: <publisher>Who</publisher>, <date>year</date>),
-<citedRange>page number or other locator (description if needed)</citedRange></bibl>;
+<citedRange>page number or other locator 123&#x2013;9 (description if needed)</citedRange></bibl>;
 digital images / citing / etc.,
 <bibl>[author, title, type...]
 (<ref target="."/> : accessed <date>YYYY-MM-DD</date>),
