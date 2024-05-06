@@ -7,6 +7,9 @@ sqlite3 --version
 ftm-cull-gedcom --help
 
 srcdir=/srv/arc/virtual_media/windows/shared/ftm
+if [ "$#" -ge 1 ] ; then
+    srcdir=$1
+fi
 
 x='
 root
