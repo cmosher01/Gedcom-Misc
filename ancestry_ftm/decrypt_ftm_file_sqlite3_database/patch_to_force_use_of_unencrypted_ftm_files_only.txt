@@ -14,7 +14,11 @@ Use https://hexed.it/
 
 
 FTM.Data.NextDB:NextDbUtilHelper class, GetE method
-(change one byte at offset B0FE):   In version 24.1.0.1520, the offset is B4D2:
+change one byte at offset:
+old version: B0FE
+version 24.1.0.1520: B4D2:
+version 24.2.2.1560: B66A:
+
 from:
         /* 0x0000B0FE 3107         */ IL_0002: ble.s     IL_000B
 to:
