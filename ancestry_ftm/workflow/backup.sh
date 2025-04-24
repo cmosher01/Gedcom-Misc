@@ -7,7 +7,7 @@
 
 # RECOMMENDED PROCESS
 # Patch FTM to work exclusively with unencrypted files.
-# Use Windows in a VM to update FTM files in the srcdir (define below), a shared directory between Windows and this host
+# Use Windows in a VM to update FTM files in the current directory, a shared directory between Windows and this host
 # Make any changes
 # synchronize with Ancestry.com
 # QUIT THE WINDOWS VM
@@ -20,23 +20,46 @@
 
 
 
-sqlite3 --version
-dos2unix --version
-rsync --version
-ftm-fixer --version
-
-
-
-srcdir=/srv/arc/virtual_media/windows/shared/ftm
 bakdir=/srv/arc/linode/backup/ftm
 dstdir=/srv/arc/linode/ftm
 gitdir=/srv/arc/dev/github_cmosher01/family-tree-maker-data
 
+cull_files='
+root
+Mosher
+Disosway
+Harrison
+Colvin
+McLaughlin
+Flandreau
+Lopez
+Lovejoy
+Spohner
+Taylorson
+Justice
+Pettit
+Romero
+'
 
 
 
 
-cd $srcdir
+
+
+
+
+sqlite3 --version
+dos2unix --version
+rsync --version
+ftm-fixer --version
+ftm-cull-gedcom --help
+
+
+
+srcdir=$(pwd)
+
+
+
 # make sure there is at least one *.ftm file
 bf=$((0))
 for f in *.ftm ; do
@@ -98,6 +121,19 @@ for db in *.ftm ; do
 
     cp -v "${db}.sql" "${gitdir}/"
 done
+echo "============================================================="
+cd -
+
+
+
+# make culled GEDCOM file, leave in temp dir
+# this file should be uploaded to Ancestry for the DNA tree
+cd $tmpdir
+args=''
+for n in $cull_files ; do
+    args="$args $n.ftm"
+done
+ftm-cull-gedcom $args
 echo "============================================================="
 cd -
 
