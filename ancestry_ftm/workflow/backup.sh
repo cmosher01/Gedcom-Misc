@@ -58,7 +58,7 @@ ftm-cull-gedcom --help
 
 srcdir=$(pwd)
 
-
+ls -lt --full-time
 
 # make sure there is at least one *.ftm file
 bf=$((0))
