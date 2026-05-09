@@ -102,6 +102,7 @@ tmpdir=$(mktemp -d)
 rsync -ltvihPr --include='*.ftm' --exclude='*' $srcdir/ $tmpdir/
 cd $tmpdir
 for db in *.ftm ; do
+    sqlite3 "${db}" "SELECT StringValue, datetime(CreateDate,'unixepoch') AS CreateDate, datetime(UpdateDate,'unixepoch') AS UpdateDate FROM Setting Where name = 'SyncVersion'"
     sqlite3 "${db}" "UPDATE MediaFile SET Thumbnail = NULL;"
     sqlite3 "${db}" ".selftest --init"
     # to verify later run:
