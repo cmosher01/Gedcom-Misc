@@ -1,4 +1,4 @@
-#!/bin/sh -e
+#!/bin/sh -ex
 
 # ***************************************
 # ******** IMPORTANT QUICK-START ********
@@ -7,6 +7,7 @@
 # You MUST cd to the shared/ftm directory (with all the read ".ftm" files updated by FTM):
 #
 #       cd /srv/arc/virtual_media/win11/shared/ftm/
+#       ls -alt *.ftm
 #
 # When running this script send all stdout and stderr to a timestamped.log file in sync_logs:
 #
@@ -22,7 +23,13 @@
 #
 #
 # This script assumes all source database files are unencrypted
-# and assumes sqlite3,dos2unix,rsync are already installed
+# and assumes all necessary programs are already installed:
+#
+#   ftm-fixer
+#   ftm-cull-gedcom
+#   sqlite3
+#   dos2unix
+#   rsync
 #
 #
 #
@@ -77,13 +84,19 @@ sqlite3 --version
 dos2unix --version
 rsync --version
 ftm-fixer --version
-ftm-cull-gedcom --help
+
+which ftm-fixer
+which ftm-cull-gedcom
 
 
 
 srcdir=$(pwd)
 
-ls -lt --full-time
+
+
+ls -alt --full-time
+
+
 
 # make sure there is at least one *.ftm file
 bf=$((0))
