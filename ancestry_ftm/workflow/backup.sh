@@ -1,21 +1,46 @@
 #!/bin/sh -e
 
+# ***************************************
+# ******** IMPORTANT QUICK-START ********
+# ***************************************
+#
+# You MUST cd to the shared/ftm directory (with all the read ".ftm" files updated by FTM):
+#
+#       cd /srv/arc/virtual_media/win11/shared/ftm/
+#
+# When running this script send all stdout and stderr to a timestamped.log file in sync_logs:
+#
+#       date '+%Y%m%dT%H%M.log'
+#       /srv/arc/dev/github_cmosher01/Gedcom-Misc/ancestry_ftm/workflow/backup.sh >/srv/arc/dev/github_cmosher01/family-tree-maker-data/sync_logs/{yyyymmddThhmm}.log 2>&1
+#
+# Also write notes of the updates and or the sync processes in a timestamped.txt file in the same sync_logs directory.
+#
+# ***************************************
+#
+#
+#
+#
+#
 # This script assumes all source database files are unencrypted
 # and assumes sqlite3,dos2unix,rsync are already installed
-
-
-
+#
+#
+#
 # RECOMMENDED PROCESS
+#
 # Patch FTM to work exclusively with unencrypted files.
-# Use Windows in a VM to update FTM files in the current directory, a shared directory between Windows and this host
+# Use Windows in a VM to update FTM files in the current directory (e.g., "virtual_media/win11/shared/ftm"), a shared directory between Windows and this host
 # Make any changes
 # synchronize with Ancestry.com
 # QUIT THE WINDOWS VM
+#
 # Manually examine the shared directory for foul play (e.g., ransomware)
+#
+#
 # Run this script, which first runs a sanity check on the *.ftm files, and aborts if any are corrupt
 # If all *.ftm files are readable, this script make an rsync copy to bakdir (define below), and
 # extracts text SQL files of each tree and copies it to the gitdir (define below)
-
+#
 # MAKE SURE bakdir is not reachable by (i.e., shared with) the Windows VM
 
 
