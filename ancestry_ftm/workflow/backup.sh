@@ -4,17 +4,12 @@
 # ******** IMPORTANT QUICK-START ********
 # ***************************************
 #
-# You MUST cd to the shared/ftm directory (with all the read ".ftm" files updated by FTM):
+# Don't launch this script directly. Run execbackup.sh instead.
+# It has the configuration parameters (file locations) hardcoded, and also creates a timestamped log file for all stdout and stderr.
 #
 #       cd /srv/arc/virtual_media/win11/shared/ftm/
 #       ls -alt *.ftm
-#
-# When running this script send all stdout and stderr to a timestamped.log file in sync_logs:
-#
-#       date '+%Y%m%dT%H%M.log'
-#       /srv/arc/dev/github_cmosher01/Gedcom-Misc/ancestry_ftm/workflow/backup.sh >/srv/arc/dev/github_cmosher01/family-tree-maker-data/sync_logs/{yyyymmddThhmm}.log 2>&1
-#
-# Also write notes of the updates and or the sync processes in a timestamped.txt file in the same sync_logs directory.
+# Also, you can write freeform notes of the updates and or the sync processes in a timestamped.txt file in the same sync_logs directory.
 #
 # ***************************************
 #
@@ -52,9 +47,14 @@
 
 
 
-bakdir=/srv/arc/linode/backup/ftm
-dstdir=/srv/arc/linode/ftm
-gitdir=/srv/arc/dev/github_cmosher01/family-tree-maker-data
+date -Ins
+pwd
+
+
+
+bakdir="$1"
+dstdir="$2"
+gitdir="$3"
 
 cull_files='
 root
