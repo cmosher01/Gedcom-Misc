@@ -142,6 +142,8 @@ cd $tmpdir
 for db in *.ftm ; do
     echo "--------------------------------------------------"
     sqlite3 "${db}" "SELECT StringValue, datetime(CreateDate,'unixepoch') AS CreateDate, datetime(UpdateDate,'unixepoch') AS UpdateDate FROM Setting Where name = 'SyncVersion'"
+    echo "People with more than one set of parents:"
+    sqlite3 "${db}" "SELECT P.fullname, P.id, COUNT(C.id) FROM Person AS P INNER JOIN ChildRelationship AS C ON (C.personid = P.id) GROUP BY P.id HAVING COUNT(C.id) > 1"
     sqlite3 "${db}" "UPDATE MediaFile SET Thumbnail = NULL;"
     sqlite3 "${db}" ".selftest --init"
     # to verify later run:
