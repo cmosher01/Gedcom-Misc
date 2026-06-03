@@ -14,7 +14,7 @@
 sqlite3 --version
 
 #srcdir=~/dev/local/wingeneal/shared/FTM_DOCUMENTS
-srcdir=/srv/arc/virtual_media/windows/shared/ftm/
+srcdir=/srv/arc/virtual_media/win11/shared/ftm/
 
 offset=21
 patch=@

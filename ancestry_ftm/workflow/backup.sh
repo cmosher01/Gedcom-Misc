@@ -118,7 +118,7 @@ echo "============================================================="
 
 # full mirror backup
 mkdir -p $bakdir
-rsync -ltvihPr $srcdir/ $bakdir/
+rsync -ltvihPr --delete $srcdir/ $bakdir/
 echo "============================================================="
 
 
