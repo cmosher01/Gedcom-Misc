@@ -118,7 +118,7 @@ echo "============================================================="
 
 # full mirror backup
 mkdir -p $bakdir
-rsync -ltvihPr --delete $srcdir/ $bakdir/
+rsync -ltvihPr $srcdir/ $bakdir/
 echo "============================================================="
 
 
@@ -131,7 +131,7 @@ echo "============================================================="
 
 # deploy (fixed version) to staging directory
 mkdir -p $dstdir
-rsync -ltvihPr $srcdir/ $dstdir/
+rsync -ltvihPr --delete $srcdir/ $dstdir/
 
 
 
